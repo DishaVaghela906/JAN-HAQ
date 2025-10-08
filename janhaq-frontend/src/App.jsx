@@ -11,6 +11,7 @@ import Profile from './pages/Profile';
 import Notifications from './pages/Notifications';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ProblemSolver from './pages/ProblemSolver'; // new page import
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/problem-solver" element={<ProblemSolver />} /> {/* new route */}
           </Routes>
         </main>
 

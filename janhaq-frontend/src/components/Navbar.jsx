@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import ThemeToggle from './ThemeToggle'; // assuming you added this component
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,30 +13,28 @@ export default function Navbar() {
     { name: 'Departments', path: '/departments' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Solve Problem', path: '/problem-solver' },
   ];
+
+  const linkClasses = (path) =>
+    `font-medium transition ${
+      location.pathname === path
+        ? 'text-blue-600 dark:text-blue-400'
+        : 'text-gray-700 dark:text-gray-200 hover:text-blue-500'
+    }`;
 
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 top-0 left-0">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        <Link
-          to="/"
-          className="text-2xl font-bold text-blue-600 dark:text-blue-400"
-        >
+        {/* Logo */}
+        <Link to="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
           JanHaq
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-4">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`font-medium ${
-                location.pathname === link.path
-                  ? 'text-blue-600 dark:text-blue-400'
-                  : 'text-gray-700 dark:text-gray-200 hover:text-blue-500'
-              } transition`}
-            >
+            <Link key={link.path} to={link.path} className={linkClasses(link.path)}>
               {link.name}
             </Link>
           ))}
@@ -68,7 +66,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
           {navLinks.map((link) => (
@@ -76,34 +74,30 @@ export default function Navbar() {
               key={link.path}
               to={link.path}
               onClick={() => setMenuOpen(false)}
-              className={`block px-6 py-3 ${
-                location.pathname === link.path
-                  ? 'text-blue-600 dark:text-blue-400 font-semibold'
-                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'
-              }`}
+              className={`block px-6 py-3 ${linkClasses(link.path)}`}
             >
               {link.name}
             </Link>
           ))}
 
-          {/* Login/Register buttons on mobile */}
+          {/* Login/Register buttons */}
           <Link
             to="/login"
             onClick={() => setMenuOpen(false)}
-            className="block px-6 py-3 text-white bg-blue-600 rounded-lg mb-2 text-center hover:bg-blue-700 transition"
+            className="block px-6 py-3 text-center bg-blue-600 text-white rounded-lg mb-2 hover:bg-blue-700 transition"
           >
             Login
           </Link>
           <Link
             to="/register"
             onClick={() => setMenuOpen(false)}
-            className="block px-6 py-3 text-white bg-green-600 rounded-lg text-center hover:bg-green-700 transition"
+            className="block px-6 py-3 text-center bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
           >
             Register
           </Link>
 
           {/* Dark/Light Mode Toggle */}
-          <div className="px-6 py-3">
+          <div className="px-6 py-3 flex justify-center">
             <ThemeToggle />
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,40 +26,44 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`font-medium ${
+              className={`font-medium transition ${
                 location.pathname === link.path
                   ? 'text-blue-600 dark:text-blue-400'
                   : 'text-gray-700 dark:text-gray-200 hover:text-blue-500'
-              } transition`}
+              }`}
             >
               {link.name}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
+        <div className="md:hidden flex items-center space-x-4">
+          <ThemeToggle />
+          <button
+            className="text-gray-700 dark:text-gray-200 focus:outline-none text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+        <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 animate-slide-down">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               onClick={() => setMenuOpen(false)}
-              className={`block px-6 py-3 ${
+              className={`block px-6 py-3 transition ${
                 location.pathname === link.path
                   ? 'text-blue-600 dark:text-blue-400 font-semibold'
                   : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'

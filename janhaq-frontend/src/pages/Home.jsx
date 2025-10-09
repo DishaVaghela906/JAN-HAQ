@@ -12,6 +12,8 @@ import { BookOpen, Search, Users } from "lucide-react";
 // Import Landing Page CSS separately
 import '../styles/home.css';
 
+
+
 export default function Home() {
   return (
     <div className="home-container">

@@ -98,6 +98,34 @@ Details: ${description || "No details provided"}
   }
 });
 
+// --- New Endpoint: Get All Laws ---
+const ALL_LAWS_PATH = path.join(__dirname, "../janhaq-frontend/src/data/all_laws.json");
+
+app.get("/api/laws", (req, res) => {
+  console.log("Request received for /api/laws");
+  fs.readFile(ALL_LAWS_PATH, "utf8", (err, data) => {
+    if (err) {
+      console.error("❌ Error reading all_laws.json:", err);
+      return res.status(500).json({ error: "Could not load laws data." });
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
+// --- New Endpoint: Get All Schemes ---
+const ALL_SCHEMES_PATH = path.join(__dirname, "../janhaq-frontend/src/data/schemes.json");
+
+app.get("/api/schemes", (req, res) => {
+  console.log("Request received for /api/schemes");
+  fs.readFile(ALL_SCHEMES_PATH, "utf8", (err, data) => {
+    if (err) {
+      console.error("❌ Error reading schemes.json:", err);
+      return res.status(500).json({ error: "Could not load schemes data." });
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
 // Search endpoint
 let embedder = null;
 app.get("/search", async (req, res) => {

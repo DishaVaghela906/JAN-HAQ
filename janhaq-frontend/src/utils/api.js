@@ -11,6 +11,33 @@ export async function searchProblem(query) {
     return [];
   }
 }
+export async function getAllLaws() {
+  try {
+    const response = await fetch(`${BASE_URL}/api/laws`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error("Error fetching all laws:", err);
+    return []; // Return an empty array on error
+  }
+}
+
+export async function getAllSchemes() {
+  try {
+    const response = await fetch(`${BASE_URL}/api/schemes`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error("Error fetching all schemes:", err);
+    return []; // Return an empty array on error
+  }
+}
 
 export async function explainItem(title, description) {
   if (!title) return null;

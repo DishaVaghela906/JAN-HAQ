@@ -1,80 +1,68 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
-import "../styles/home.css";
+import { motion } from "framer-motion";
+
+import HeroSection from "../components/home/HeroSection";
+import FeatureCard from "../components/home/FeatureCard";
+import HowItWorksSection from "../components/home/HowItWorksSection";
+import ImpactSection from "../components/home/ImpactSection";
+import FinalCTA from "../components/home/FinalCTA";
+
+import { BookOpen, Search, Users } from "lucide-react";
+
+// Import Landing Page CSS separately
+import '../styles/home.css';
 
 export default function Home() {
   return (
-    <div className="home-page">
-
-      {/* Navbar */}
-      <Navbar />
-
+    <div className="home-container">
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1>Your Rights. Your Voice. Your Action.</h1>
-          <p className="tagline">
-            Find the right laws, schemes, and departments to support your cause.
+      <HeroSection />
+
+      {/* Key Features Section */}
+      <section className="py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            Everything You Need to Know Your Rights
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            JanHaq simplifies complex civic information into clear, actionable guidance
           </p>
-          <div className="land-btn">
-            <input
-              type="text"
-              placeholder="Type your problem..."
-              className="hero-search"
-            />
-            <button className="cta-button">
-              Start Now
-            </button>
-          </div>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <FeatureCard
+            icon={BookOpen}
+            title="Understand Your Rights"
+            description="Access plain-language summaries of your legal rights. No legal jargon—just clear explanations you can understand and act on."
+            delay={0.1}
+            accentColor="blue"
+          />
+          <FeatureCard
+            icon={Search}
+            title="Find Relevant Schemes"
+            description="Discover government schemes you qualify for with step-by-step guidance. Get the benefits you deserve without the confusion."
+            delay={0.2}
+            accentColor="teal"
+          />
+          <FeatureCard
+            icon={Users}
+            title="Connect with Authorities"
+            description="Find verified contact information for the right government departments. Reach the people who can help you directly."
+            delay={0.3}
+            accentColor="cyan"
+          />
         </div>
       </section>
 
-      {/* Features / Quick Access */}
-      <section className="features-section">
-        <h2>Quick Access</h2>
-        <div className="features-grid">
-          <Card title="Know Your Rights" icon="📜" />
-          <Card title="File a Complaint" icon="📝" />
-          <Card title="Explore Schemes" icon="💡" />
-        </div>
-      </section>
-
-      {/* Highlights */}
-      <section className="security-section">
-        <h2>Why JanHaq?</h2>
-        <div className="security-points">
-          <Card title="Awareness" icon="🧠" />
-          <Card title="Transparency" icon="🔍" />
-          <Card title="Empowerment" icon="💪" />
-        </div>
-      </section>
-
-      {/* Additional Section: Legal Guidance */}
-      <section className="about-section">
-        <h2>Legal Guidance</h2>
-        <p>
-          JanHaq connects you with accurate legal information, government schemes, 
-          and departments to guide you through the process of asserting your rights. 
-          Our mission is to empower citizens with knowledge and tools to take informed action.
-        </p>
-      </section>
-
-      {/* Contact / Help Section */}
-      <section className="contact-section">
-        <div className="contact-content">
-          <h2>Need Assistance?</h2>
-          <p>
-            Our team is here to help you understand your rights and connect with 
-            the appropriate authorities. Reach out for guidance or report an issue.
-          </p>
-          <button className="cta-button">Contact Support</button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <Footer />
+      <HowItWorksSection />
+      <ImpactSection />
+      <FinalCTA />
     </div>
   );
 }

@@ -13,6 +13,7 @@ import Schemes from './pages/Schemes';
 import ProblemSolver from './pages/ProblemSolver';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Departments from './pages/Departments';
 // ... import other pages as needed
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="problem-solver" element={<ProblemSolver />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="departments" element={<Departments />} />
           {/* Add other pages that need the layout here */}
         </Route>
         

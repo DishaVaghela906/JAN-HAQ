@@ -1,10 +1,9 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 export default function About() {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100 flex flex-col">
-      <Navbar />
+  
 
       <div className="flex-grow max-w-5xl mx-auto py-16 px-6 space-y-12">
         <h1 className="text-3xl font-bold text-center">About JanHaq</h1>
@@ -33,7 +32,6 @@ export default function About() {
         </section>
       </div>
 
-      <Footer />
     </div>
   );
 }

@@ -1,13 +1,12 @@
-export default function Card({ title, icon, description }) {
+// Card.jsx
+import React from "react";
+
+export default function Card({ children, className = "" }) {
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition rounded-2xl p-8 text-center border border-gray-100 dark:border-gray-700">
-      <div className="text-5xl mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      {description && (
-        <p className="text-gray-600 dark:text-gray-300 text-sm">
-          {description}
-        </p>
-      )}
+    <div
+      className={`relative rounded-2xl p-8 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg transition-all duration-300 overflow-hidden ${className}`}
+    >
+      {children}
     </div>
   );
 }

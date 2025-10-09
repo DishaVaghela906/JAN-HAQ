@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Card from '../components/Card';
+import Card from '../components/LawCard';
 import { getAllLaws } from '../utils/api'; 
 
 export default function Laws() {
@@ -8,7 +8,7 @@ export default function Laws() {
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
 
-  // Effect to fetch all laws once when the component mounts
+  // Fetch all laws on mount
   useEffect(() => {
     const fetchLaws = async () => {
       setLoading(true);
@@ -20,7 +20,7 @@ export default function Laws() {
     fetchLaws();
   }, []);
 
-  // Effect to filter laws whenever the search term changes
+  // Filter laws on search
   useEffect(() => {
     if (!searchTerm) {
       setFilteredLaws(allLaws);
@@ -36,13 +36,14 @@ export default function Laws() {
 
   return (
     <div className="flex-grow max-w-7xl mx-auto py-16 px-6">
-    
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold mb-4">Laws & Regulations</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">Browse and filter through the legal knowledge base.</p>
+        <p className="text-lg text-gray-600 dark:text-gray-400">
+          Browse and filter through the legal knowledge base.
+        </p>
       </div>
 
-      {/* Filter Input */}
+      {/* Search input */}
       <div className="mb-8 max-w-lg mx-auto">
         <input
           type="text"
@@ -53,27 +54,26 @@ export default function Laws() {
         />
       </div>
 
-      {/* Content Grid */}
+      {/* Law cards */}
       {loading ? (
         <p className="text-center">Loading laws...</p>
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredLaws.length > 0 ? (
             filteredLaws.map((law, index) => (
-              <a href={law.referenceLink} target="_blank" rel="noopener noreferrer" key={index} className="block hover:scale-105 transition-transform">
-                <Card
-                  title={law.title}
-                  description={law.description}
-                  icon="📜"
-                />
-              </a>
+              <Card
+                key={index}
+                title={law.title}
+                description={law.description}
+                icon="📜"
+                referenceLink={law.referenceLink}
+              />
             ))
           ) : (
             <p className="text-center col-span-full">No laws match your filter.</p>
           )}
         </div>
       )}
-     
     </div>
   );
 }

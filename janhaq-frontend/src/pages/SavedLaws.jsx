@@ -1,5 +1,5 @@
 
-import Card from '../components/Card';
+import Card from '../components/LawCard';
 import { savedLaws } from '../utils/mockData';
 
 export default function SavedLaws() {

@@ -1,5 +1,5 @@
 
-import Card from '../components/Card';
+import Card from '../components/LawCard';
 
 export default function Dashboard() {
   return (

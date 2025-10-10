@@ -14,6 +14,8 @@ export default function Navbar() {
     { name: 'Laws', path: '/laws' },
     { name: 'Schemes', path: '/schemes' },
     { name: 'Problem Solver', path: '/problem-solver' },
+    { name: 'Departments', path: '/departments' },
+    { name: 'About', path: '/about' },
   ];
   
   // Add dashboard link only if user is logged in

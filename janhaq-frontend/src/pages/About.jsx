@@ -1,37 +1,49 @@
+import React from "react";
+
+// Import all separated components
+import StorySection from "../components/about/StorySection";
+import JourneySection from "../components/about/JourneySection";
+import MissionAndValuesSection from "../components/about/MissionAndValuesSection";
+import TeamSection from "../components/about/TeamSection";
+import FinalAboutCTA from "../components/about/FinalAboutCTA";
 
 
+// --- Main About Component ---
 export default function About() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100 flex flex-col">
-  
+    // Applied custom background class to the main container
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 bg-pattern">
+      
+      <StorySection />
+      
+      <JourneySection />
+      
+      <MissionAndValuesSection />
 
-      <div className="flex-grow max-w-5xl mx-auto py-16 px-6 space-y-12">
-        <h1 className="text-3xl font-bold text-center">About JanHaq</h1>
-        <p className="text-lg text-center">
-          JanHaq is a civic rights platform helping citizens access laws, schemes, and file complaints
-          with transparency and ease. Our mission is to empower people with knowledge and tools to
-          make their voice heard.
-        </p>
+      <TeamSection />
+      
+      <FinalAboutCTA />
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Our Team</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow text-center">
-              <p className="font-bold">Krisha Gandhi</p>
-              <p className="text-gray-600 dark:text-gray-300">Frontend Developer</p>
-            </div>
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow text-center">
-              <p className="font-bold">John Doe</p>
-              <p className="text-gray-600 dark:text-gray-300">Backend Developer</p>
-            </div>
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow text-center">
-              <p className="font-bold">Jane Smith</p>
-              <p className="text-gray-600 dark:text-gray-300">UI/UX Designer</p>
-            </div>
-          </div>
-        </section>
-      </div>
-
+      {/* Style block for the custom background texture */}
+      <style>
+        {`
+          /* LIGHT MODE: Visible diagonal pattern for a sophisticated texture */
+          .bg-pattern {
+            background-color: #f9fafb; /* bg-gray-50 */
+            background-image: linear-gradient(135deg, #f3f4f6 10%, transparent 10%),
+                              linear-gradient(45deg, #f3f4f6 10%, transparent 10%);
+            background-size: 15px 15px;
+            background-position: 0 0, 7.5px 7.5px; 
+          }
+          
+          /* DARK MODE: Subtle dark dot texture for a premium, non-flat background */
+          .dark .bg-pattern {
+            background-color: #111827; /* bg-gray-900 */
+            background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+            background-size: 20px 20px;
+          }
+        `}
+      </style>
     </div>
   );
 }

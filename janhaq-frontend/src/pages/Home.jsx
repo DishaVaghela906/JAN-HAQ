@@ -9,26 +9,25 @@ import FinalCTA from "../components/home/FinalCTA";
 
 import { BookOpen, Search, Users } from "lucide-react";
 
-// Import Landing Page CSS separately
-import '../styles/home.css';
-
 export default function Home() {
   return (
-    // Ensure the overall container manages the background transition smoothly
     <div className="home-container bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
-      {/* Hero Section */}
-      <HeroSection />
 
-      {/* Key Features Section - Removed background class here to allow inheritance */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+      {/* Hero Section - very tight top spacing */}
+      <div className="mt-[-130px]">
+        <HeroSection />
+      </div>
+
+      {/* Key Features Section */}
+      <section className="py-8 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
             Everything You Need to Know Your Rights
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -36,7 +35,7 @@ export default function Home() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           <FeatureCard
             icon={BookOpen}
             title="Understand Your Rights"
@@ -63,7 +62,11 @@ export default function Home() {
 
       <HowItWorksSection />
       <ImpactSection />
-      <FinalCTA />
+
+      {/* Tight bottom spacing */}
+      <div className="mb-[-80px]">
+        <FinalCTA />
+      </div>
     </div>
   );
 }

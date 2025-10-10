@@ -12,15 +12,14 @@ import { BookOpen, Search, Users } from "lucide-react";
 // Import Landing Page CSS separately
 import '../styles/home.css';
 
-
-
 export default function Home() {
   return (
-    <div className="home-container">
+    // Ensure the overall container manages the background transition smoothly
+    <div className="home-container bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Key Features Section */}
+      {/* Key Features Section - Removed background class here to allow inheritance */}
       <section className="py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

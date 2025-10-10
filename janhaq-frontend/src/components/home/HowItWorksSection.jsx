@@ -46,7 +46,8 @@ const accentColors = {
 
 export default function HowItWorksSection() {
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-100 dark:bg-gray-900">
+    // Changed bg-gray-100 to bg-gray-50 for consistency, keeping dark mode class
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -163,6 +163,44 @@ app.get("/search", async (req, res) => {
   }
 });
 
+//  Get Personalized Recommendations ---
+app.post("/api/recommendations", (req, res) => {
+  const { role, interests } = req.body; // Get user profile from request
+  
+  if (!role && (!interests || interests.length === 0)) {
+    return res.json([]); // Return empty if no profile data
+  }
+
+  console.log(`Generating recommendations for role: ${role}, interests: ${interests.join(', ')}`);
+
+  // Our simple matching logic
+  const recommendations = knowledge.map(item => {
+    let score = 0;
+    const itemTags = item.tags || [];
+
+    // Check for a role match (higher score)
+    if (role && itemTags.includes(role)) {
+      score += 2;
+    }
+
+    // Check for interest matches (lower score)
+    if (interests && interests.length > 0) {
+      for (const interest of interests) {
+        if (itemTags.includes(interest.toLowerCase())) {
+          score += 1;
+        }
+      }
+    }
+    
+    return { ...item, score };
+  })
+  .filter(item => item.score > 0) // Only include items that matched something
+  .sort((a, b) => b.score - a.score) // Sort by the highest score
+  .slice(0, 5); // Return the top 5 matches
+
+  res.json(recommendations);
+});
+
 // Catch-all for React Router
 app.get(/.*/, (req, res) => {
   res.sendFile(path.join(FRONTEND_BUILD, "index.html"));

@@ -60,3 +60,21 @@ export async function getAllDepartments() {
   if (!response.ok) throw new Error('Failed to fetch departments');
   return response.json();
 }
+
+export async function getRecommendations(profile) {
+  try {
+    const response = await fetch(`${BASE_URL}/api/recommendations`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(profile),
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error("Error fetching recommendations:", err);
+    return [];
+  }
+}

@@ -4,6 +4,7 @@ export async function searchProblem(query) {
   if (!query) return [];
   try {
     const response = await fetch(`${BASE_URL}/search?q=${encodeURIComponent(query)}`);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
     return data;
   } catch (err) {
@@ -11,31 +12,28 @@ export async function searchProblem(query) {
     return [];
   }
 }
+
 export async function getAllLaws() {
   try {
     const response = await fetch(`${BASE_URL}/api/laws`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
     return data;
   } catch (err) {
     console.error("Error fetching all laws:", err);
-    return []; // Return an empty array on error
+    return [];
   }
 }
 
 export async function getAllSchemes() {
   try {
     const response = await fetch(`${BASE_URL}/api/schemes`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
     return data;
   } catch (err) {
     console.error("Error fetching all schemes:", err);
-    return []; // Return an empty array on error
+    return [];
   }
 }
 
@@ -47,6 +45,7 @@ export async function explainItem(title, description) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, description }),
     });
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
     return data.explanation;
   } catch (err) {
@@ -55,10 +54,18 @@ export async function explainItem(title, description) {
   }
 }
 
+// ✅ Updated: getAllDepartments now uses BASE_URL
 export async function getAllDepartments() {
-  const response = await fetch('/api/departments');
-  if (!response.ok) throw new Error('Failed to fetch departments');
-  return response.json();
+  try {
+    const response = await fetch(`${BASE_URL}/api/departments`);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const data = await response.json();
+    console.log("Fetched departments:", data); // debug log
+    return data;
+  } catch (err) {
+    console.error("Error fetching departments:", err);
+    return [];
+  }
 }
 
 export async function getRecommendations(profile) {
@@ -68,9 +75,7 @@ export async function getRecommendations(profile) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(profile),
     });
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
     return data;
   } catch (err) {

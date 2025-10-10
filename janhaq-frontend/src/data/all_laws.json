@@ -8,7 +8,11 @@
       "commercial law",
       "shipping",
       "contracts",
-      "bill"
+      "bill",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -20,7 +24,11 @@
       "tax law",
       "finance",
       "revenue",
-      "bill"
+      "bill",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -32,7 +40,10 @@
       "constitutional law",
       "territorial reorganization",
       "Jammu & Kashmir",
-      "bill"
+      "bill",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -44,7 +55,11 @@
       "finance law",
       "banking",
       "exports/imports",
-      "bill"
+      "bill",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -56,7 +71,10 @@
       "financial law",
       "banking",
       "contracts",
-      "bill"
+      "bill",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -68,7 +86,12 @@
       "property law",
       "historical law",
       "estates",
-      "bill"
+      "bill",
+      "Housing",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -80,7 +103,13 @@
       "labor law",
       "employment guarantee",
       "rural development",
-      "bill"
+      "bill",
+      "professional",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -92,7 +121,11 @@
       "finance law",
       "infrastructure",
       "development",
-      "bill"
+      "bill",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -104,7 +137,11 @@
       "tax law",
       "Delhi",
       "sales tax",
-      "bill"
+      "bill",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -116,7 +153,13 @@
       "land revenue",
       "Bengal",
       "property law",
-      "bill"
+      "bill",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -128,7 +171,10 @@
       "maritime law",
       "security",
       "coast guard",
-      "bill"
+      "bill",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -140,7 +186,10 @@
       "corporate law",
       "companies",
       "business",
-      "bill"
+      "bill",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -152,7 +201,10 @@
       "municipal law",
       "urban governance",
       "Delhi",
-      "bill"
+      "bill",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -164,7 +216,11 @@
       "tax law",
       "income tax",
       "finance",
-      "bill"
+      "bill",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -175,7 +231,10 @@
     "tags": [
       "law",
       "India",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -186,7 +245,10 @@
     "tags": [
       "law",
       "India",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -197,7 +259,11 @@
     "tags": [
       "land",
       "mineral regulation",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -208,7 +274,10 @@
     "tags": [
       "immigration",
       "liability",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -219,7 +288,11 @@
     "tags": [
       "estate law",
       "rent",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -230,7 +303,10 @@
     "tags": [
       "safety",
       "explosives",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -241,7 +317,10 @@
     "tags": [
       "employment",
       "residency",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -252,7 +331,10 @@
     "tags": [
       "civil law",
       "court fees",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -263,7 +345,10 @@
     "tags": [
       "safety",
       "hazardous materials",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -274,7 +359,12 @@
     "tags": [
       "environment",
       "pollution",
-      "rule"
+      "rule",
+      "Environment",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -285,7 +375,10 @@
     "tags": [
       "security",
       "industry",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -296,7 +389,10 @@
     "tags": [
       "urban planning",
       "municipal law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -307,7 +403,10 @@
     "tags": [
       "civil registration",
       "population records",
-      "rule"
+      "rule",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -318,7 +417,10 @@
     "tags": [
       "legislation",
       "interpretation",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -329,7 +431,10 @@
     "tags": [
       "water management",
       "river board",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -340,7 +445,10 @@
     "tags": [
       "social law",
       "women protection",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -351,7 +459,10 @@
     "tags": [
       "regional law",
       "history",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -362,7 +473,10 @@
     "tags": [
       "social welfare",
       "licensing",
-      "rule"
+      "rule",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -373,7 +487,10 @@
     "tags": [
       "penal system",
       "prison management",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -384,7 +501,12 @@
     "tags": [
       "education",
       "healthcare",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "Healthcare",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -395,7 +517,10 @@
     "tags": [
       "law",
       "India",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -406,7 +531,10 @@
     "tags": [
       "law",
       "judiciary",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -417,7 +545,11 @@
     "tags": [
       "research",
       "science",
-      "rule"
+      "rule",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -428,7 +560,10 @@
     "tags": [
       "regional law",
       "Manipur",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -439,7 +574,10 @@
     "tags": [
       "transport",
       "railways",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -450,7 +588,10 @@
     "tags": [
       "energy",
       "oil industry",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -461,7 +602,11 @@
     "tags": [
       "workplace law",
       "women safety",
-      "rule"
+      "rule",
+      "professional",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -472,7 +617,10 @@
     "tags": [
       "military",
       "reserve forces",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -483,7 +631,13 @@
     "tags": [
       "land law",
       "Punjab",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -494,7 +648,10 @@
     "tags": [
       "law profession",
       "advocates",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -505,7 +662,12 @@
     "tags": [
       "law",
       "India",
-      "rule"
+      "rule",
+      "farmer",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -516,7 +678,10 @@
     "tags": [
       "law",
       "Punjab",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -527,7 +692,10 @@
     "tags": [
       "audit",
       "government",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -538,7 +706,10 @@
     "tags": [
       "women",
       "protection",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -549,7 +720,13 @@
     "tags": [
       "land law",
       "revenue",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -560,7 +737,11 @@
     "tags": [
       "transport",
       "infrastructure",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -571,7 +752,10 @@
     "tags": [
       "agriculture",
       "trade",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -582,7 +766,11 @@
     "tags": [
       "labor law",
       "safety",
-      "rule"
+      "rule",
+      "social worker",
+      "Healthcare",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -593,7 +781,10 @@
     "tags": [
       "parliament",
       "government",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -604,7 +795,11 @@
     "tags": [
       "education",
       "research",
-      "rule"
+      "rule",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -615,7 +810,10 @@
     "tags": [
       "judiciary",
       "Manipur",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -626,7 +824,11 @@
     "tags": [
       "law",
       "India",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -637,7 +839,13 @@
     "tags": [
       "land law",
       "Manipur",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -648,7 +856,10 @@
     "tags": [
       "transport",
       "metro",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -659,7 +870,10 @@
     "tags": [
       "family law",
       "courts",
-      "rule"
+      "rule",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -670,7 +884,12 @@
     "tags": [
       "women",
       "divorce",
-      "rule"
+      "rule",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -681,7 +900,11 @@
     "tags": [
       "finance",
       "international",
-      "rule"
+      "rule",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -692,7 +915,12 @@
     "tags": [
       "agriculture",
       "industry",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "Finance",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -703,7 +931,10 @@
     "tags": [
       "finance",
       "international",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -714,7 +945,10 @@
     "tags": [
       "finance",
       "international",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -725,7 +959,11 @@
     "tags": [
       "tax",
       "Manipur",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -736,7 +974,10 @@
     "tags": [
       "charity",
       "social welfare",
-      "rule"
+      "rule",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -747,7 +988,11 @@
     "tags": [
       "labor",
       "employment",
-      "rule"
+      "rule",
+      "professional",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -758,7 +1003,11 @@
     "tags": [
       "agriculture",
       "export",
-      "rule"
+      "rule",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -769,7 +1018,10 @@
     "tags": [
       "state law",
       "Arunachal Pradesh",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -780,7 +1032,11 @@
     "tags": [
       "transport",
       "inland waterways",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -791,7 +1047,13 @@
     "tags": [
       "land law",
       "Tripura",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -802,7 +1064,11 @@
     "tags": [
       "real estate",
       "RERA",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -813,7 +1079,10 @@
     "tags": [
       "animal welfare",
       "law",
-      "rule"
+      "rule",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -824,7 +1093,10 @@
     "tags": [
       "transport",
       "metro",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -835,7 +1107,10 @@
     "tags": [
       "urban planning",
       "NCR",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -846,7 +1121,11 @@
     "tags": [
       "land law",
       "Jharkhand",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -857,7 +1136,11 @@
     "tags": [
       "law",
       "India",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -868,7 +1151,11 @@
     "tags": [
       "finance",
       "fraud",
-      "rule"
+      "rule",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -879,7 +1166,13 @@
     "tags": [
       "labor",
       "film industry",
-      "rule"
+      "rule",
+      "professional",
+      "social worker",
+      "Business",
+      "Finance",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -890,7 +1183,10 @@
     "tags": [
       "media",
       "sports",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -901,7 +1197,15 @@
     "tags": [
       "agriculture",
       "trade",
-      "rule"
+      "rule",
+      "professional",
+      "farmer",
+      "Business",
+      "Healthcare",
+      "Agriculture",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -912,7 +1216,10 @@
     "tags": [
       "maritime law",
       "territory",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -923,7 +1230,11 @@
     "tags": [
       "security",
       "intelligence",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -934,7 +1245,10 @@
     "tags": [
       "courts",
       "civil law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -945,7 +1259,10 @@
     "tags": [
       "state law",
       "Dadra and Nagar Haveli",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -956,7 +1273,10 @@
     "tags": [
       "state law",
       "Mizoram",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -967,7 +1287,10 @@
     "tags": [
       "media",
       "press",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -978,7 +1301,10 @@
     "tags": [
       "labor",
       "transport",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -989,7 +1315,11 @@
     "tags": [
       "labor",
       "social justice",
-      "rule"
+      "rule",
+      "professional",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1000,7 +1330,13 @@
     "tags": [
       "employment",
       "rural development",
-      "rule"
+      "rule",
+      "professional",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1011,7 +1347,11 @@
     "tags": [
       "energy",
       "environment",
-      "rule"
+      "rule",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1022,7 +1362,11 @@
     "tags": [
       "child labor",
       "labor law",
-      "rule"
+      "rule",
+      "professional",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1033,7 +1377,10 @@
     "tags": [
       "tax",
       "finance",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1044,7 +1391,11 @@
     "tags": [
       "land law",
       "Gujarat",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1055,7 +1406,11 @@
     "tags": [
       "library",
       "culture",
-      "rule"
+      "rule",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1066,7 +1421,10 @@
     "tags": [
       "labor",
       "film industry",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1077,7 +1435,11 @@
     "tags": [
       "housing",
       "rent control",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1088,7 +1450,11 @@
     "tags": [
       "library",
       "culture",
-      "rule"
+      "rule",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1099,7 +1465,10 @@
     "tags": [
       "energy",
       "corporate law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1110,7 +1479,10 @@
     "tags": [
       "employment",
       "labor law",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1121,7 +1493,10 @@
     "tags": [
       "election",
       "governance",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1132,7 +1507,10 @@
     "tags": [
       "charity",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1143,7 +1521,10 @@
     "tags": [
       "industry",
       "finance",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1154,7 +1535,10 @@
     "tags": [
       "labor",
       "women",
-      "rule"
+      "rule",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1165,7 +1549,11 @@
     "tags": [
       "emigration",
       "labor",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1176,7 +1564,12 @@
     "tags": [
       "trade",
       "agriculture",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -1187,7 +1580,10 @@
     "tags": [
       "law",
       "governance",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1198,7 +1594,12 @@
     "tags": [
       "environment",
       "forestry",
-      "rule"
+      "rule",
+      "Environment",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1209,7 +1610,11 @@
     "tags": [
       "environment",
       "pollution",
-      "rule"
+      "rule",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1220,7 +1625,12 @@
     "tags": [
       "land law",
       "tenancy",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -1231,7 +1641,10 @@
     "tags": [
       "museum",
       "culture",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1242,7 +1655,12 @@
     "tags": [
       "industry",
       "finance",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "Finance",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1253,7 +1671,11 @@
     "tags": [
       "transport",
       "commerce",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1264,7 +1686,10 @@
     "tags": [
       "governance",
       "investigation",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1275,7 +1700,10 @@
     "tags": [
       "healthcare",
       "medical",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1286,7 +1714,11 @@
     "tags": [
       "disability",
       "rights",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1297,7 +1729,12 @@
     "tags": [
       "housing",
       "tenancy",
-      "rule"
+      "rule",
+      "Housing",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1308,7 +1745,10 @@
     "tags": [
       "finance",
       "bankruptcy",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1319,7 +1759,10 @@
     "tags": [
       "transport",
       "commerce",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1330,7 +1773,10 @@
     "tags": [
       "infrastructure",
       "safety",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1341,7 +1787,10 @@
     "tags": [
       "governance",
       "administration",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1352,7 +1801,10 @@
     "tags": [
       "agriculture",
       "health",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1363,7 +1815,10 @@
     "tags": [
       "law enforcement",
       "security",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1374,7 +1829,13 @@
     "tags": [
       "land law",
       "taxation",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -1385,7 +1846,11 @@
     "tags": [
       "industry",
       "textile",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1396,7 +1861,11 @@
     "tags": [
       "property",
       "law",
-      "rule"
+      "rule",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1407,7 +1876,10 @@
     "tags": [
       "finance",
       "corporate",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1418,7 +1890,11 @@
     "tags": [
       "estate",
       "law",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1429,7 +1905,13 @@
     "tags": [
       "tax",
       "business",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1440,7 +1922,12 @@
     "tags": [
       "family law",
       "guardianship",
-      "rule"
+      "rule",
+      "parent",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1451,7 +1938,10 @@
     "tags": [
       "standards",
       "quality",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1462,7 +1952,13 @@
     "tags": [
       "environment",
       "research",
-      "rule"
+      "rule",
+      "Education",
+      "Environment",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1473,7 +1969,11 @@
     "tags": [
       "commerce",
       "urban",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1484,7 +1984,10 @@
     "tags": [
       "governance",
       "administration",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1495,7 +1998,10 @@
     "tags": [
       "elections",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1506,7 +2012,10 @@
     "tags": [
       "administration",
       "finance",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1517,7 +2026,12 @@
     "tags": [
       "land law",
       "property",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1528,7 +2042,11 @@
     "tags": [
       "property",
       "law",
-      "rule"
+      "rule",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1539,7 +2057,11 @@
     "tags": [
       "land law",
       "development",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -1550,7 +2072,10 @@
     "tags": [
       "judiciary",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1561,7 +2086,11 @@
     "tags": [
       "property",
       "guardianship",
-      "rule"
+      "rule",
+      "parent",
+      "Housing",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1572,7 +2101,10 @@
     "tags": [
       "employment",
       "gender equality",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1583,7 +2115,10 @@
     "tags": [
       "maritime",
       "fishing",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1594,7 +2129,15 @@
     "tags": [
       "social welfare",
       "senior citizens",
-      "rule"
+      "rule",
+      "senior",
+      "parent",
+      "social worker",
+      "Housing",
+      "35-50",
+      "60+",
+      "25-35",
+      "65+"
     ]
   },
   {
@@ -1605,7 +2148,11 @@
     "tags": [
       "finance",
       "savings",
-      "rule"
+      "rule",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1616,7 +2163,11 @@
     "tags": [
       "employment",
       "training",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1627,7 +2178,10 @@
     "tags": [
       "local governance",
       "manipur",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1638,7 +2192,12 @@
     "tags": [
       "environment",
       "forestry",
-      "rule"
+      "rule",
+      "Environment",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1649,7 +2208,11 @@
     "tags": [
       "health",
       "tobacco",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1660,7 +2223,11 @@
     "tags": [
       "health",
       "education",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1671,7 +2238,12 @@
     "tags": [
       "property",
       "law",
-      "rule"
+      "rule",
+      "Housing",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1682,7 +2254,11 @@
     "tags": [
       "estate",
       "law",
-      "rule"
+      "rule",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1693,7 +2269,11 @@
     "tags": [
       "crime",
       "finance",
-      "rule"
+      "rule",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1704,7 +2284,10 @@
     "tags": [
       "law enforcement",
       "delhi",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1715,7 +2298,11 @@
     "tags": [
       "education",
       "food technology",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1726,7 +2313,10 @@
     "tags": [
       "immigration",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1737,7 +2327,10 @@
     "tags": [
       "corporate",
       "business",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1748,7 +2341,11 @@
     "tags": [
       "education",
       "management",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1759,7 +2356,14 @@
     "tags": [
       "finance",
       "rural",
-      "rule"
+      "rule",
+      "professional",
+      "farmer",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1770,7 +2374,11 @@
     "tags": [
       "education",
       "delhi",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1781,7 +2389,10 @@
     "tags": [
       "finance",
       "sikkim",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1792,7 +2403,11 @@
     "tags": [
       "tax",
       "delhi",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1803,7 +2418,11 @@
     "tags": [
       "health",
       "education",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1814,7 +2433,10 @@
     "tags": [
       "maritime",
       "law enforcement",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1825,7 +2447,11 @@
     "tags": [
       "agriculture",
       "IPR",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1836,7 +2462,10 @@
     "tags": [
       "law",
       "dispute resolution",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1847,7 +2476,11 @@
     "tags": [
       "education",
       "technology",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1858,7 +2491,11 @@
     "tags": [
       "finance",
       "infrastructure",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1869,7 +2506,11 @@
     "tags": [
       "industry",
       "corporate",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1880,7 +2521,11 @@
     "tags": [
       "healthcare",
       "education",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -1891,7 +2536,10 @@
     "tags": [
       "transport",
       "infrastructure",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1902,7 +2550,11 @@
     "tags": [
       "IPR",
       "innovation",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1913,7 +2565,10 @@
     "tags": [
       "law",
       "security",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1924,7 +2579,10 @@
     "tags": [
       "agriculture",
       "contracts",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1935,7 +2593,10 @@
     "tags": [
       "property",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1946,7 +2607,11 @@
     "tags": [
       "tax",
       "commerce",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1957,7 +2622,12 @@
     "tags": [
       "property",
       "finance",
-      "rule"
+      "rule",
+      "Housing",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -1968,7 +2638,10 @@
     "tags": [
       "labor",
       "human rights",
-      "rule"
+      "rule",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1979,7 +2652,10 @@
     "tags": [
       "security",
       "law enforcement",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -1990,7 +2666,10 @@
     "tags": [
       "industry",
       "corporate",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2001,7 +2680,10 @@
     "tags": [
       "administration",
       "state",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2012,7 +2694,13 @@
     "tags": [
       "employment",
       "rural development",
-      "rule"
+      "rule",
+      "professional",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -2023,7 +2711,11 @@
     "tags": [
       "education",
       "design",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2034,7 +2726,11 @@
     "tags": [
       "industry",
       "corporate",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2045,7 +2741,10 @@
     "tags": [
       "industry",
       "corporate",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2056,7 +2755,12 @@
     "tags": [
       "land",
       "property",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -2067,7 +2771,10 @@
     "tags": [
       "security",
       "border",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2078,7 +2785,10 @@
     "tags": [
       "finance",
       "profession",
-      "rule"
+      "rule",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2089,7 +2799,10 @@
     "tags": [
       "transport",
       "infrastructure",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2100,7 +2813,11 @@
     "tags": [
       "veterinary",
       "education",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2111,7 +2828,10 @@
     "tags": [
       "law enforcement",
       "administration",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2122,7 +2842,11 @@
     "tags": [
       "property",
       "housing",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2133,7 +2857,11 @@
     "tags": [
       "education",
       "technology",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2144,7 +2872,11 @@
     "tags": [
       "transport",
       "tax",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -2155,7 +2887,10 @@
     "tags": [
       "commerce",
       "competition",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2166,7 +2901,10 @@
     "tags": [
       "finance",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2177,7 +2915,10 @@
     "tags": [
       "administration",
       "state",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2188,7 +2929,10 @@
     "tags": [
       "municipal",
       "administration",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2199,7 +2943,10 @@
     "tags": [
       "transport",
       "aviation",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2210,7 +2957,12 @@
     "tags": [
       "healthcare",
       "education",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "Healthcare",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2221,7 +2973,10 @@
     "tags": [
       "industry",
       "corporate",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2232,7 +2987,10 @@
     "tags": [
       "transport",
       "railway",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2243,7 +3001,15 @@
     "tags": [
       "education",
       "agriculture",
-      "rule"
+      "rule",
+      "student",
+      "farmer",
+      "Education",
+      "Agriculture",
+      "35-50",
+      "18-25",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -2254,7 +3020,10 @@
     "tags": [
       "social",
       "protection",
-      "rule"
+      "rule",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2265,7 +3034,10 @@
     "tags": [
       "security",
       "aviation",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2276,7 +3048,10 @@
     "tags": [
       "corporate",
       "business",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2287,7 +3062,10 @@
     "tags": [
       "municipal",
       "administration",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2298,7 +3076,13 @@
     "tags": [
       "land",
       "revenue",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -2309,7 +3093,11 @@
     "tags": [
       "industry",
       "corporate",
-      "rule"
+      "rule",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2320,7 +3108,10 @@
     "tags": [
       "industry",
       "nationalisation",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2331,7 +3122,10 @@
     "tags": [
       "security",
       "law enforcement",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2342,7 +3136,11 @@
     "tags": [
       "education",
       "forensics",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2353,7 +3151,11 @@
     "tags": [
       "finance",
       "crime",
-      "rule"
+      "rule",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2364,7 +3166,11 @@
     "tags": [
       "finance",
       "tax",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -2375,7 +3181,11 @@
     "tags": [
       "education",
       "technology",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2386,7 +3196,10 @@
     "tags": [
       "judiciary",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2397,7 +3210,10 @@
     "tags": [
       "judiciary",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2408,7 +3224,10 @@
     "tags": [
       "finance",
       "profession",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2419,7 +3238,10 @@
     "tags": [
       "finance",
       "banking",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2430,7 +3252,11 @@
     "tags": [
       "education",
       "university",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2441,7 +3267,11 @@
     "tags": [
       "finance",
       "tax",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -2452,7 +3282,11 @@
     "tags": [
       "international",
       "war law",
-      "rule"
+      "rule",
+      "Healthcare",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2463,7 +3297,12 @@
     "tags": [
       "housing",
       "rent",
-      "rule"
+      "rule",
+      "farmer",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -2474,7 +3313,11 @@
     "tags": [
       "religion",
       "heritage",
-      "rule"
+      "rule",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2485,7 +3328,10 @@
     "tags": [
       "tax",
       "commerce",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2496,7 +3342,10 @@
     "tags": [
       "administration",
       "law",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2507,7 +3356,11 @@
     "tags": [
       "education",
       "university",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2518,7 +3371,11 @@
     "tags": [
       "finance",
       "tax",
-      "rule"
+      "rule",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -2529,7 +3386,10 @@
     "tags": [
       "security",
       "international",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2540,7 +3400,10 @@
     "tags": [
       "finance",
       "banking",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2551,7 +3414,10 @@
     "tags": [
       "law",
       "state",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2562,7 +3428,11 @@
     "tags": [
       "law",
       "prison",
-      "rule"
+      "rule",
+      "Healthcare",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2573,7 +3443,10 @@
     "tags": [
       "infrastructure",
       "water management",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2584,7 +3457,11 @@
     "tags": [
       "education",
       "distance learning",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2595,7 +3472,11 @@
     "tags": [
       "education",
       "technology",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2606,7 +3487,10 @@
     "tags": [
       "finance",
       "trade",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2617,7 +3501,10 @@
     "tags": [
       "education",
       "university",
-      "rule"
+      "rule",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2628,7 +3515,11 @@
     "tags": [
       "education",
       "university",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2639,7 +3530,11 @@
     "tags": [
       "education",
       "university",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2650,7 +3545,11 @@
     "tags": [
       "education",
       "university",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2661,7 +3560,11 @@
     "tags": [
       "education",
       "tribal",
-      "rule"
+      "rule",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2673,7 +3576,11 @@
       "constitutional law",
       "representation",
       "Nagaland",
-      "amendment"
+      "amendment",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -2685,7 +3592,10 @@
       "banking law",
       "RBI",
       "finance",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2697,7 +3607,10 @@
       "judicial reform",
       "tribunals",
       "law",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2709,7 +3622,10 @@
       "banking law",
       "finance",
       "IDBI",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2721,7 +3637,10 @@
       "family law",
       "child protection",
       "marriage",
-      "amendment"
+      "amendment",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2732,7 +3651,10 @@
     "tags": [
       "animal welfare",
       "criminal law",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2743,7 +3665,10 @@
     "tags": [
       "charity law",
       "property",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2755,7 +3680,10 @@
       "international law",
       "human rights",
       "sanctions",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2767,7 +3695,10 @@
       "constitutional law",
       "Jammu & Kashmir",
       "reorganisation",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2778,7 +3709,11 @@
     "tags": [
       "finance law",
       "international development",
-      "amendment"
+      "amendment",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2789,7 +3724,11 @@
     "tags": [
       "finance law",
       "international banking",
-      "amendment"
+      "amendment",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2801,7 +3740,10 @@
       "international law",
       "finance",
       "immunities",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2813,7 +3755,10 @@
       "constitutional law",
       "state reorganisation",
       "north-east India",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2824,7 +3769,10 @@
     "tags": [
       "statutory law",
       "legal reform",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2835,7 +3783,10 @@
     "tags": [
       "industry law",
       "public sector",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2846,7 +3797,10 @@
     "tags": [
       "charity law",
       "child welfare",
-      "amendment"
+      "amendment",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2858,7 +3812,11 @@
       "environment law",
       "forestry",
       "conservation",
-      "amendment"
+      "amendment",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2870,7 +3828,11 @@
       "labor law",
       "apprenticeship",
       "employment",
-      "amendment"
+      "amendment",
+      "professional",
+      "Housing",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2882,7 +3844,11 @@
       "revenue law",
       "finance",
       "recovery",
-      "amendment"
+      "amendment",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2894,7 +3860,13 @@
       "veterinary law",
       "education",
       "profession",
-      "amendment"
+      "amendment",
+      "student",
+      "professional",
+      "Education",
+      "35-50",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -2906,7 +3878,12 @@
       "environment law",
       "forestry",
       "fund management",
-      "amendment"
+      "amendment",
+      "Environment",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2917,7 +3894,11 @@
     "tags": [
       "land law",
       "urban development",
-      "amendment"
+      "amendment",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -2929,7 +3910,10 @@
       "constitutional law",
       "state formation",
       "Mizoram",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2940,7 +3924,10 @@
     "tags": [
       "industry law",
       "public sector",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2953,7 +3940,10 @@
       "state reorganisation",
       "Maharashtra",
       "Gujarat",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2964,7 +3954,10 @@
     "tags": [
       "criminal law",
       "aviation security",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2976,7 +3969,10 @@
       "finance law",
       "infrastructure",
       "banking",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -2988,7 +3984,12 @@
       "labor law",
       "women's rights",
       "employment",
-      "amendment"
+      "amendment",
+      "professional",
+      "parent",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3000,7 +4001,10 @@
       "constitutional law",
       "state formation",
       "Arunachal Pradesh",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3012,7 +4016,11 @@
       "banking law",
       "rural development",
       "finance",
-      "amendment"
+      "amendment",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -3024,7 +4032,12 @@
       "tax law",
       "hospitality",
       "finance",
-      "amendment"
+      "amendment",
+      "Finance",
+      "Healthcare",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3036,7 +4049,11 @@
       "education law",
       "university",
       "administration",
-      "amendment"
+      "amendment",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3048,7 +4065,11 @@
       "tax law",
       "sales tax",
       "finance",
-      "amendment"
+      "amendment",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3060,7 +4081,11 @@
       "intellectual property",
       "patents",
       "innovation",
-      "amendment"
+      "amendment",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3073,7 +4098,10 @@
       "state reorganisation",
       "Andhra Pradesh",
       "Telangana",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3085,7 +4113,10 @@
       "tax law",
       "excise duty",
       "finance",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3097,7 +4128,10 @@
       "criminal law",
       "international treaty",
       "chemical weapons",
-      "amendment"
+      "amendment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3109,7 +4143,11 @@
       "education law",
       "university",
       "tribal development",
-      "amendment"
+      "amendment",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3121,7 +4159,15 @@
       "education law",
       "agriculture",
       "university",
-      "amendment"
+      "amendment",
+      "student",
+      "farmer",
+      "Education",
+      "Agriculture",
+      "35-50",
+      "18-25",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3132,7 +4178,10 @@
     "tags": [
       "international law",
       "humanitarian law",
-      "amendment"
+      "amendment",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3144,7 +4193,11 @@
       "corporate law",
       "company law",
       "business regulation",
-      "amendment"
+      "amendment",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3156,7 +4209,11 @@
       "tax law",
       "income tax",
       "finance",
-      "amendment"
+      "amendment",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3167,7 +4224,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3178,7 +4238,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3189,7 +4252,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3200,7 +4266,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3211,7 +4280,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3222,7 +4294,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3233,7 +4308,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3244,7 +4322,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3255,7 +4337,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3266,7 +4351,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3277,7 +4366,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3288,7 +4380,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3299,7 +4394,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3310,7 +4408,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3321,7 +4423,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3332,7 +4437,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3343,7 +4452,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3354,7 +4466,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "social worker",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3365,7 +4480,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3376,7 +4494,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3387,7 +4508,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3398,7 +4522,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3409,7 +4536,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3420,7 +4550,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3431,7 +4564,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3442,7 +4578,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3453,7 +4593,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3464,7 +4608,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3475,7 +4622,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3486,7 +4637,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3497,7 +4651,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3508,7 +4665,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3519,7 +4679,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3530,7 +4694,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3541,7 +4709,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3552,7 +4723,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3563,7 +4737,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3574,7 +4751,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -3585,7 +4766,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3596,7 +4781,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3607,7 +4796,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3618,7 +4810,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3629,7 +4824,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3640,7 +4838,15 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "senior",
+      "parent",
+      "social worker",
+      "Housing",
+      "35-50",
+      "60+",
+      "25-35",
+      "65+"
     ]
   },
   {
@@ -3651,7 +4857,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3662,7 +4871,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3673,7 +4886,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3684,7 +4901,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3695,7 +4915,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3706,7 +4929,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3717,7 +4943,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3728,7 +4957,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3739,7 +4971,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -3750,7 +4986,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3761,7 +5000,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3772,7 +5014,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3783,7 +5029,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3794,7 +5043,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3805,7 +5057,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3816,7 +5071,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3827,7 +5085,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3838,7 +5100,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3849,7 +5114,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3860,7 +5128,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3871,7 +5142,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3882,7 +5157,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3893,7 +5171,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3904,7 +5185,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3915,7 +5200,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3926,7 +5214,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3937,7 +5229,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3948,7 +5243,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -3959,7 +5258,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -3970,7 +5273,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -3981,7 +5288,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -3992,7 +5302,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4003,7 +5316,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4014,7 +5331,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4025,7 +5346,12 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "Healthcare",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4036,7 +5362,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4047,7 +5377,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "professional",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4058,7 +5392,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4069,7 +5406,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4080,7 +5421,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4091,7 +5435,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4102,7 +5449,12 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4113,7 +5465,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4124,7 +5480,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4135,7 +5495,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4146,7 +5509,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4157,7 +5523,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4168,7 +5537,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4179,7 +5552,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4190,7 +5567,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4201,7 +5582,13 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4212,7 +5599,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4223,7 +5613,12 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4234,7 +5629,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4245,7 +5643,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4256,7 +5657,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4267,7 +5671,12 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4278,7 +5687,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4289,7 +5701,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4300,7 +5715,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4311,7 +5729,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4322,7 +5744,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4333,7 +5758,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4344,7 +5773,13 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4355,7 +5790,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4366,7 +5804,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4377,7 +5819,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4388,7 +5834,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4399,7 +5848,15 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "farmer",
+      "Education",
+      "Agriculture",
+      "35-50",
+      "18-25",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4410,7 +5867,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4421,7 +5882,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4432,7 +5896,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4443,7 +5911,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4454,7 +5926,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4465,7 +5941,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4476,7 +5955,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4487,7 +5970,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4498,7 +5985,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4509,7 +6000,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4520,7 +6015,11 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4531,7 +6030,10 @@
     "tags": [
       "Law",
       "India",
-      "State Act"
+      "State Act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4544,7 +6046,10 @@
       "safety",
       "aircraft security",
       "hijacking",
-      "aviation law"
+      "aviation law",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4557,7 +6062,10 @@
       "interpretation",
       "administration",
       "legislation",
-      "general clauses"
+      "general clauses",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4570,7 +6078,10 @@
       "shipping",
       "offshore platforms",
       "security",
-      "maritime law"
+      "maritime law",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4582,7 +6093,10 @@
       "aircraft offenses",
       "in-flight security",
       "Tokyo Convention",
-      "aviation law"
+      "aviation law",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4595,7 +6109,11 @@
       "navigation",
       "water transport",
       "infrastructure",
-      "waterways authority"
+      "waterways authority",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4608,7 +6126,11 @@
       "heritage",
       "books",
       "management",
-      "cultural preservation"
+      "cultural preservation",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4621,7 +6143,11 @@
       "oriental manuscripts",
       "heritage",
       "public access",
-      "cultural preservation"
+      "cultural preservation",
+      "Education",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4634,7 +6160,10 @@
       "harbor management",
       "infrastructure",
       "shipping",
-      "maritime law"
+      "maritime law",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4647,7 +6176,10 @@
       "UN convention",
       "human rights",
       "international law",
-      "racial equality"
+      "racial equality",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4660,7 +6192,10 @@
       "shrine management",
       "heritage",
       "trust",
-      "administration"
+      "administration",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4673,7 +6208,11 @@
       "medical education",
       "regulation",
       "health",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4686,7 +6225,13 @@
       "foreign trade",
       "finance",
       "export-import",
-      "central act"
+      "central act",
+      "professional",
+      "Business",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4699,7 +6244,11 @@
       "environment",
       "air quality",
       "regulation",
-      "central act"
+      "central act",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4712,7 +6261,12 @@
       "conservation",
       "efficiency",
       "environment",
-      "central act"
+      "central act",
+      "Environment",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4725,7 +6279,11 @@
       "education",
       "entrepreneurship",
       "research",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4738,7 +6296,11 @@
       "rural credit",
       "finance",
       "agriculture",
-      "central act"
+      "central act",
+      "farmer",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -4751,7 +6313,10 @@
       "road",
       "goods carriage",
       "passengers",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4764,7 +6329,12 @@
       "research",
       "healthcare",
       "AIIMS",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "Healthcare",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4777,7 +6347,10 @@
       "journalism",
       "media regulation",
       "freedom of press",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4790,7 +6363,10 @@
       "security",
       "hijacking",
       "law enforcement",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4803,7 +6379,12 @@
       "training",
       "employment",
       "industrial workforce",
-      "central act"
+      "central act",
+      "professional",
+      "Housing",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4816,7 +6397,11 @@
       "infrastructure",
       "finance",
       "development",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -4828,7 +6413,12 @@
       "wards",
       "estate management",
       "legal guardianship",
-      "central act"
+      "central act",
+      "parent",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4840,7 +6430,10 @@
       "union territory",
       "law extension",
       "legal framework",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4852,7 +6445,10 @@
       "language policy",
       "official communication",
       "government",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4864,7 +6460,10 @@
       "elections",
       "Sikkim",
       "voting law",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4876,7 +6475,10 @@
       "tribunals",
       "legal reforms",
       "dispute resolution",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4889,7 +6491,10 @@
       "broadcasting",
       "media",
       "public access",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4902,7 +6507,10 @@
       "transport",
       "safety",
       "operation",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4915,7 +6523,10 @@
       "sales",
       "promotion",
       "work conditions",
-      "central act"
+      "central act",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4928,7 +6539,11 @@
       "energy",
       "education",
       "research",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -4940,7 +6555,10 @@
       "illegal migrants",
       "tribunals",
       "immigration law",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4952,7 +6570,10 @@
       "terrorism",
       "national security",
       "illegal organizations",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4965,7 +6586,10 @@
       "quality control",
       "certification",
       "BIS",
-      "central act"
+      "central act",
+      "professional",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4978,7 +6602,10 @@
       "investigation",
       "public issues",
       "commission",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -4991,7 +6618,11 @@
       "vessels",
       "navigation",
       "transport",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -5004,7 +6635,11 @@
       "development aid",
       "Africa",
       "funding",
-      "central act"
+      "central act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5017,7 +6652,11 @@
       "foreign exchange",
       "forfeiture",
       "crime prevention",
-      "central act"
+      "central act",
+      "Housing",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5030,7 +6669,10 @@
       "iron and steel",
       "restructuring",
       "industry management",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5043,7 +6685,11 @@
       "research",
       "NIT",
       "STEM",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5056,7 +6702,11 @@
       "NID",
       "technical institutes",
       "education",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5069,7 +6719,10 @@
       "development aid",
       "Africa",
       "banking",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5082,7 +6735,11 @@
       "IIIT",
       "technical institutes",
       "PPP",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5095,7 +6752,11 @@
       "midwifery",
       "healthcare education",
       "regulation",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5108,7 +6769,11 @@
       "government dues",
       "recovery",
       "finance",
-      "central act"
+      "central act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5121,7 +6786,10 @@
       "business law",
       "company structure",
       "partnership",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5134,7 +6802,11 @@
       "research institute",
       "education",
       "science",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5147,7 +6819,10 @@
       "state reorganisation",
       "administration",
       "territory",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5160,7 +6835,10 @@
       "infrastructure",
       "construction",
       "transport",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5173,7 +6851,10 @@
       "law and order",
       "Punjab",
       "security",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5186,7 +6867,11 @@
       "education",
       "research",
       "university",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5199,7 +6884,13 @@
       "healthcare regulation",
       "professionals",
       "commission",
-      "central act"
+      "central act",
+      "student",
+      "professional",
+      "Education",
+      "35-50",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5212,7 +6903,11 @@
       "loans",
       "finance",
       "farmers",
-      "central act"
+      "central act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5225,7 +6920,11 @@
       "IIM",
       "higher education",
       "administration",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5238,7 +6937,10 @@
       "maritime security",
       "safety",
       "government",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5251,7 +6953,10 @@
       "central universities",
       "governance",
       "education policy",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5264,7 +6969,10 @@
       "market regulation",
       "anti-trust",
       "mergers",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5277,7 +6985,10 @@
       "laws extension",
       "central legislation",
       "regional law",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5290,7 +7001,11 @@
       "financial crimes",
       "investigation",
       "prosecution",
-      "central act"
+      "central act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5303,7 +7018,11 @@
       "conservation",
       "wildlife",
       "environment",
-      "central act"
+      "central act",
+      "Environment",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5316,7 +7035,10 @@
       "profession regulation",
       "finance",
       "chartered accountants",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5329,7 +7051,10 @@
       "anti-piracy",
       "security",
       "ships",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5342,7 +7067,11 @@
       "patents",
       "innovation",
       "technology",
-      "central act"
+      "central act",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5355,7 +7084,10 @@
       "paramilitary",
       "internal security",
       "law enforcement",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5368,7 +7100,12 @@
       "animal health",
       "education",
       "regulation",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "Healthcare",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5381,7 +7118,11 @@
       "IIT",
       "higher education",
       "administration",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5394,7 +7135,10 @@
       "development association",
       "legal status",
       "privileges",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5407,7 +7151,10 @@
       "finance",
       "IDBI",
       "industrial development",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5420,7 +7167,10 @@
       "operation",
       "maintenance",
       "infrastructure",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5433,7 +7183,11 @@
       "cruelty prevention",
       "rights",
       "regulation",
-      "central act"
+      "central act",
+      "Healthcare",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5446,7 +7200,10 @@
       "highways",
       "infrastructure",
       "road management",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5459,7 +7216,11 @@
       "war victims",
       "humanitarian",
       "geneva conventions",
-      "central act"
+      "central act",
+      "Healthcare",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5472,7 +7233,11 @@
       "vehicles",
       "transport",
       "Delhi",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5486,7 +7251,10 @@
       "death",
       "marriage",
       "records",
-      "central act"
+      "central act",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5499,7 +7267,11 @@
       "inter-state trade",
       "taxation",
       "finance",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5512,7 +7284,10 @@
       "counter-terrorism",
       "paramilitary",
       "law enforcement",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5525,7 +7300,11 @@
       "regulation",
       "homebuyers",
       "transparency",
-      "central act"
+      "central act",
+      "Housing",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5538,7 +7317,10 @@
       "profession regulation",
       "finance",
       "audit",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5551,7 +7333,11 @@
       "languages",
       "university",
       "academics",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5564,7 +7350,15 @@
       "education",
       "research",
       "university",
-      "central act"
+      "central act",
+      "student",
+      "farmer",
+      "Education",
+      "Agriculture",
+      "35-50",
+      "18-25",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5577,7 +7371,16 @@
       "welfare",
       "maintenance",
       "family law",
-      "central act"
+      "central act",
+      "senior",
+      "parent",
+      "social worker",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "60+",
+      "25-35",
+      "65+"
     ]
   },
   {
@@ -5590,7 +7393,11 @@
       "companies",
       "governance",
       "finance",
-      "central act"
+      "central act",
+      "professional",
+      "Business",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5603,7 +7410,11 @@
       "adolescent labor",
       "protection",
       "employment law",
-      "central act"
+      "central act",
+      "professional",
+      "parent",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5616,7 +7427,13 @@
       "taxation",
       "agriculture",
       "property law",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -5628,7 +7445,10 @@
       "prison administration",
       "law enforcement",
       "discipline",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5641,7 +7461,10 @@
       "legal profession",
       "regulation",
       "advocates",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5653,7 +7476,10 @@
       "regional law",
       "Oudh",
       "legal consolidation",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5666,7 +7492,13 @@
       "women employees",
       "employment benefits",
       "labor law",
-      "central act"
+      "central act",
+      "professional",
+      "parent",
+      "Healthcare",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5679,7 +7511,11 @@
       "workplace safety",
       "women protection",
       "employment law",
-      "central act"
+      "central act",
+      "professional",
+      "Consumer Rights",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5692,7 +7528,10 @@
       "reorganisation",
       "union territories",
       "administration",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5704,7 +7543,12 @@
       "land law",
       "tenancy",
       "property",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "Consumer Rights",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -5716,7 +7560,11 @@
       "health law",
       "organ transplantation",
       "medical ethics",
-      "central act"
+      "central act",
+      "Business",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5728,7 +7576,10 @@
       "municipal law",
       "urban governance",
       "Delhi",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5740,7 +7591,10 @@
       "police law",
       "law enforcement",
       "Delhi",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5752,7 +7606,11 @@
       "revenue law",
       "civil jurisdiction",
       "Bombay",
-      "central act"
+      "central act",
+      "Finance",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5764,7 +7622,11 @@
       "higher education",
       "tribal welfare",
       "university",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5776,7 +7638,11 @@
       "land development",
       "urban planning",
       "Delhi",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -5788,7 +7654,11 @@
       "higher education",
       "university",
       "governance",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5800,7 +7670,11 @@
       "university",
       "higher education",
       "Tripura",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5812,7 +7686,12 @@
       "financial law",
       "fraud prevention",
       "money circulation",
-      "central act"
+      "central act",
+      "Finance",
+      "Consumer Rights",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5824,7 +7703,11 @@
       "land law",
       "property ceiling",
       "Delhi",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -5836,7 +7719,11 @@
       "sales tax",
       "Delhi",
       "finance law",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5848,7 +7735,11 @@
       "university",
       "higher education",
       "Santiniketan",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5860,7 +7751,10 @@
       "transport law",
       "waterways",
       "navigation",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5872,7 +7766,11 @@
       "tax law",
       "income tax",
       "finance",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5884,7 +7782,10 @@
       "civil law",
       "court jurisdiction",
       "regional law",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5896,7 +7797,11 @@
       "tax law",
       "fuel",
       "Manipur",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5908,7 +7813,11 @@
       "rent law",
       "tenancy",
       "Delhi",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -5920,7 +7829,10 @@
       "transport law",
       "tramways",
       "infrastructure",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5932,7 +7844,11 @@
       "university",
       "higher education",
       "Pondicherry",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5944,7 +7860,11 @@
       "university",
       "higher education",
       "Sikkim",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5956,7 +7876,11 @@
       "distance education",
       "university",
       "IGNOU",
-      "central act"
+      "central act",
+      "student",
+      "Education",
+      "18-25",
+      "25-35"
     ]
   },
   {
@@ -5968,7 +7892,11 @@
       "tax law",
       "gifts",
       "finance",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -5980,7 +7908,10 @@
       "local governance",
       "village authorities",
       "Manipur",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -5992,7 +7923,10 @@
       "chemical weapons",
       "security",
       "international law",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -6004,7 +7938,10 @@
       "civil courts",
       "small causes",
       "jurisdiction",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   },
   {
@@ -6016,7 +7953,11 @@
       "tax law",
       "wealth tax",
       "finance",
-      "central act"
+      "central act",
+      "Finance",
+      "35-50",
+      "50-65",
+      "25-35"
     ]
   },
   {
@@ -6028,7 +7969,13 @@
       "land law",
       "revenue",
       "Manipur",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -6040,7 +7987,13 @@
       "land law",
       "revenue",
       "Tripura",
-      "central act"
+      "central act",
+      "farmer",
+      "Housing",
+      "Finance",
+      "Agriculture",
+      "35-50",
+      "50-65"
     ]
   },
   {
@@ -6052,7 +8005,10 @@
       "customs law",
       "tariff",
       "trade",
-      "central act"
+      "central act",
+      "18+",
+      "35-50",
+      "25-35"
     ]
   }
 ]

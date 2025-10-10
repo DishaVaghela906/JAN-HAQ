@@ -1,41 +1,47 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import { getUser } from '../utils/userDb'; // Import our new DB helper
 
-// Create the context
 const AuthContext = createContext(null);
 
-// Create a provider component
+// This key is for storing the *currently logged-in user's email* for session persistence
+const SESSION_KEY = 'janhaqSessionEmail'; 
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // Check localStorage for a user on initial app load
+  // On initial app load, check if there's an active session
   useEffect(() => {
-    const storedUser = localStorage.getItem('janhaqUser');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
+    const sessionEmail = localStorage.getItem(SESSION_KEY);
+    if (sessionEmail) {
+      // If there is, fetch the full user data from our mock DB
+      const fullUserData = getUser(sessionEmail);
+      if (fullUserData) {
+        setUser(fullUserData);
+      }
     }
   }, []);
 
-  // Login function
-  const login = (userData) => {
-    // In a real app, you'd get this from a backend API
-    const fakeUserData = { email: userData.email, name: 'Guest User' };
-    localStorage.setItem('janhaqUser', JSON.stringify(fakeUserData));
-    setUser(fakeUserData);
+  // Login now looks up the user in our mock DB
+  const login = (loginData) => {
+    const fullUserData = getUser(loginData.email);
+    if (fullUserData) {
+      localStorage.setItem(SESSION_KEY, fullUserData.email); // Save current session
+      setUser(fullUserData);
+      return fullUserData;
+    }
+    return null; // User not found
   };
 
-  // Logout function
   const logout = () => {
-    localStorage.removeItem('janhaqUser');
+    localStorage.removeItem(SESSION_KEY); // Clear the session
     setUser(null);
   };
 
-  // The value provided to consuming components
   const value = { user, login, logout };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 
-// Custom hook to easily use the auth context
 export const useAuth = () => {
   return useContext(AuthContext);
 };

@@ -12,7 +12,7 @@ export default function StorySection() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-24 border-b border-transparent">
+    <section className="relative overflow-hidden pt-32 pb-24 border-b border-transparent">
       {/* Background Gradient */}
       <motion.div
         className="absolute inset-0 -z-20"

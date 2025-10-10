@@ -10,7 +10,8 @@ const accentGradient = "from-blue-500 via-teal-500 to-cyan-500";
 
 export default function FinalCTA() {
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-100 dark:bg-gray-900 relative overflow-hidden">
+    // Changed bg-gray-100 to bg-gray-50 for consistency, keeping dark mode class
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900 relative overflow-hidden transition-colors duration-500">
       {/* Subtle floating gradient elements */}
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}

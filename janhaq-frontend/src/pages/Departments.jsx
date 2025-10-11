@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import DeptCard from "../components/DeptCard";
-import { getAllDepartments } from "../utils/api";
+import { getDepartments } from '../utils/api';
 
 export default function Departments() {
   const [departments, setDepartments] = useState([]);
@@ -10,7 +10,7 @@ export default function Departments() {
     const fetchDepartments = async () => {
       setLoading(true);
       try {
-        const data = await getAllDepartments();
+        const data = await getDepartments();
         setDepartments(data);
       } catch (error) {
         console.error("Failed to fetch departments:", error);

@@ -1,26 +1,25 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainLayout from "./components/MainLayout";
+import ProtectedRoute from "./components/ProtectedRoute";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/MainLayout'; // Import our new layout
-import ProtectedRoute from './components/ProtectedRoute';
-
-// Import all page components
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
-import Laws from './pages/Laws';
-import Schemes from './pages/Schemes';
-import ProblemSolver from './pages/ProblemSolver';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Departments from './pages/Departments';
-// ... import other pages as needed
+// Pages
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import Laws from "./pages/Laws";
+import Schemes from "./pages/Schemes";
+import ProblemSolver from "./pages/ProblemSolver";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Departments from "./pages/Departments";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Route 1: Pages that use the MainLayout (Navbar + Footer) */}
+        {/* Public pages inside MainLayout */}
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="laws" element={<Laws />} />
@@ -29,21 +28,22 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="departments" element={<Departments />} />
-          {/* Add other pages that need the layout here */}
         </Route>
-        
-        {/* Route 2: Standalone pages (no Navbar/Footer from layout) */}
+
+        {/* Auth pages (no layout) */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Route 3: Protected pages that also use the MainLayout */}
-        <Route element={<MainLayout />}>
-            <Route element={<ProtectedRoute />}>
-                <Route path="dashboard" element={<Dashboard />} />
-                {/* Add other protected pages here */}
-            </Route>
+        {/* Protected pages */}
+        <Route element={<ProtectedRoute />}>
+          <Route element={<MainLayout />}>
+            <Route path="dashboard" element={<Dashboard />} />
+            {/* Add other protected pages here */}
+          </Route>
         </Route>
 
+        {/* Catch-all 404 */}
+        <Route path="*" element={<div className="p-10 text-center">Page not found</div>} />
       </Routes>
     </Router>
   );

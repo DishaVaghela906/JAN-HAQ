@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext"; // ✅ Import AuthProvider
 import MainLayout from "./components/MainLayout";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -17,35 +18,34 @@ import Departments from "./pages/Departments";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* Public pages inside MainLayout */}
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
-          <Route path="laws" element={<Laws />} />
-          <Route path="schemes" element={<Schemes />} />
-          <Route path="problem-solver" element={<ProblemSolver />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="departments" element={<Departments />} />
-        </Route>
-
-        {/* Auth pages (no layout) */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-
-        {/* Protected pages */}
-        <Route element={<ProtectedRoute />}>
-          <Route element={<MainLayout />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            {/* Add other protected pages here */}
+    <AuthProvider> {/* ✅ Wrap everything with AuthProvider */}
+      <Router>
+        <Routes>
+          {/* Public pages inside MainLayout */}
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            
+            {/* ✅ Protected routes - require authentication */}
+            <Route element={<ProtectedRoute />}>
+              <Route path="laws" element={<Laws />} />
+              <Route path="schemes" element={<Schemes />} />
+              <Route path="problem-solver" element={<ProblemSolver />} />
+              <Route path="departments" element={<Departments />} />
+              <Route path="dashboard" element={<Dashboard />} />
+            </Route>
           </Route>
-        </Route>
 
-        {/* Catch-all 404 */}
-        <Route path="*" element={<div className="p-10 text-center">Page not found</div>} />
-      </Routes>
-    </Router>
+          {/* Auth pages (no layout) */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+
+          {/* Catch-all 404 */}
+          <Route path="*" element={<div className="p-10 text-center">Page not found</div>} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

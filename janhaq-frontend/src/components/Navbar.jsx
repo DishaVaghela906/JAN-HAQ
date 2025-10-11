@@ -7,20 +7,28 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, logout } = useAuth();
+  const { user, logout, isAuthenticated } = useAuth();
 
-  const navLinks = [
+  // ✅ Public links - visible to everyone
+  const publicLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
+
+  // ✅ Protected links - visible only to authenticated users
+  const protectedLinks = [
+    { name: "Dashboard", path: "/dashboard" },
     { name: "Laws", path: "/laws" },
     { name: "Schemes", path: "/schemes" },
     { name: "Problem Solver", path: "/problem-solver" },
     { name: "Departments", path: "/departments" },
   ];
 
-  if (user) {
-    navLinks.push({ name: "Dashboard", path: "/dashboard" });
-  }
+  // ✅ Combine links based on authentication status
+  const navLinks = isAuthenticated 
+    ? [...publicLinks, ...protectedLinks]
+    : publicLinks;
 
   const linkClasses = (path) =>
     `relative font-medium transition-all duration-300 pb-1
@@ -66,7 +74,7 @@ export default function Navbar() {
           ))}
 
           <div className="flex items-center space-x-2">
-            {!user ? (
+            {!isAuthenticated ? (
               <>
                 <Link
                   to="/login"
@@ -82,12 +90,17 @@ export default function Navbar() {
                 </Link>
               </>
             ) : (
-              <button
-                onClick={handleLogout}
-                className="px-4 py-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700 transition text-sm"
-              >
-                Logout
-              </button>
+              <>
+                <span className="text-sm text-gray-700 dark:text-gray-300 mr-2">
+                  Hi, {user?.name || 'User'}
+                </span>
+                <button
+                  onClick={handleLogout}
+                  className="px-4 py-2 rounded-lg bg-red-600 text-white hover:bg-red-700 transition text-sm"
+                >
+                  Logout
+                </button>
+              </>
             )}
             <ThemeToggle />
           </div>
@@ -122,7 +135,7 @@ export default function Navbar() {
           ))}
 
           <div className="px-6 py-3 space-y-2 text-center">
-            {!user ? (
+            {!isAuthenticated ? (
               <>
                 <Link
                   to="/login"
@@ -140,12 +153,17 @@ export default function Navbar() {
                 </Link>
               </>
             ) : (
-              <button
-                onClick={handleLogout}
-                className="w-full px-4 py-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700 transition"
-              >
-                Logout
-              </button>
+              <>
+                <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  Hi, {user?.name || 'User'}
+                </p>
+                <button
+                  onClick={handleLogout}
+                  className="w-full px-4 py-2 rounded-lg bg-red-600 text-white hover:bg-red-700 transition"
+                >
+                  Logout
+                </button>
+              </>
             )}
           </div>
 

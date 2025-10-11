@@ -5,6 +5,7 @@ const AuthContext = createContext(null);
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(null);
+  const [loading, setLoading] = useState(true); // ✅ Added loading state
 
   // Load token + user (including profile) from localStorage on app start
   useEffect(() => {
@@ -35,6 +36,8 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("token");
       }
     }
+    
+    setLoading(false); // ✅ Mark loading as complete
   }, []);
 
   // Login: expects { token, user } from backend
@@ -198,6 +201,7 @@ export const AuthProvider = ({ children }) => {
       value={{
         user,
         token,
+        loading, // ✅ Expose loading state
         login,
         logout,
         updateProfile,

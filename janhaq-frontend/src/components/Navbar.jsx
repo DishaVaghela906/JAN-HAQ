@@ -13,22 +13,28 @@ export default function Navbar() {
   const publicLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact" }, // We'll move this for logged-in users
   ];
 
   // ✅ Protected links - visible only to authenticated users
   const protectedLinks = [
-    { name: "Dashboard", path: "/dashboard" },
     { name: "Laws", path: "/laws" },
     { name: "Schemes", path: "/schemes" },
     { name: "Problem Solver", path: "/problem-solver" },
     { name: "Departments", path: "/departments" },
+    { name: "Dashboard", path: "/dashboard" },
   ];
 
   // ✅ Combine links based on authentication status
-  const navLinks = isAuthenticated 
-    ? [...publicLinks, ...protectedLinks]
-    : publicLinks;
+  let navLinks;
+  if (isAuthenticated) {
+    // For logged-in users, move Contact to the last position
+    const publicWithoutContact = publicLinks.filter(link => link.name !== "Contact");
+    const contactLink = publicLinks.find(link => link.name === "Contact");
+    navLinks = [...publicWithoutContact, ...protectedLinks, contactLink];
+  } else {
+    navLinks = publicLinks;
+  }
 
   const linkClasses = (path) =>
     `relative font-medium transition-all duration-300 pb-1
@@ -92,7 +98,7 @@ export default function Navbar() {
             ) : (
               <>
                 <span className="text-sm text-gray-700 dark:text-gray-300 mr-2">
-                  Hi, {user?.name || 'User'}
+                  Hi, {user?.name || "User"}
                 </span>
                 <button
                   onClick={handleLogout}
@@ -155,7 +161,7 @@ export default function Navbar() {
             ) : (
               <>
                 <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
-                  Hi, {user?.name || 'User'}
+                  Hi, {user?.name || "User"}
                 </p>
                 <button
                   onClick={handleLogout}

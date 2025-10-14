@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import Card from '../components/LawCard';
-import { getAllDepartments } from '../utils/api';
+import { useEffect, useState } from "react";
+import DeptCard from "../components/DeptCard";
+import { getDepartments } from '../utils/api';
 
 export default function Departments() {
   const [departments, setDepartments] = useState([]);
@@ -10,9 +10,10 @@ export default function Departments() {
     const fetchDepartments = async () => {
       setLoading(true);
       try {
-        const data = await getAllDepartments();
+        const data = await getDepartments();
         setDepartments(data);
       } catch (error) {
+        console.error("Failed to fetch departments:", error);
         setDepartments([]);
       }
       setLoading(false);
@@ -22,8 +23,7 @@ export default function Departments() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 bg-pattern">
-      
-      <div className="mt-[-100px] mb-[-80px] pt-32 pb-16 px-6 sm:px-8 lg:px-16">
+      <div className="mt-32 mb-16 px-6 sm:px-8 lg:px-16">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Departments & Authorities</h1>
@@ -39,10 +39,13 @@ export default function Departments() {
           <div className="grid md:grid-cols-3 gap-6">
             {departments.length > 0 ? (
               departments.map((dept, index) => (
-                <Card
-                  key={dept.id || index}
+                <DeptCard
+                  key={dept._id || index}
                   title={dept.name}
-                  description={dept.contact}
+                  contact_person={dept.contact_person}
+                  phone={dept.phone}
+                  email={dept.email}
+                  city={dept.city}
                   icon="🏛️"
                 />
               ))
@@ -51,19 +54,6 @@ export default function Departments() {
             )}
           </div>
         )}
-
-        {/* Map */}
-        <div className="mt-12 rounded-lg overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.95373531583453!3d-37.81720974202153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f06f31%3A0x5045675218ce7e33!2sVictoria%20State%20Library!5e0!3m2!1sen!2sus!4v1689616800000!5m2!1sen!2sus"
-            width="100%"
-            height="450"
-            className="border-0"
-            allowFullScreen=""
-            loading="lazy"
-            title="Departments Map"
-          ></iframe>
-        </div>
       </div>
 
       {/* Background pattern styling */}

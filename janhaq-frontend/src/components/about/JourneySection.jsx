@@ -57,7 +57,7 @@ export default function JourneySection({ isDark }) {
   return (
     <section
       id="journey"
-      className="relative z-20 py-20 px-6 max-w-7xl mx-auto mt-8"
+      className="relative z-20 pt-5 pb-20 px-6 max-w-7xl mx-auto mt-8"
       aria-label="Journey timeline"
     >
       {/* Subtle floating decorative shapes */}

@@ -2,16 +2,27 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "../Button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "../../utils/createPageUrl";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext"; // ✅ Import useAuth
 
 export default function HeroSection() {
   const [isDark, setIsDark] = useState(false);
+  const navigate = useNavigate();
+  const { isAuthenticated } = useAuth(); // ✅ Get authentication status
 
   useEffect(() => {
     const darkMode = document.documentElement.classList.contains("dark");
     setIsDark(darkMode);
   }, []);
+
+  // ✅ Handle Get Started button click
+  const handleGetStarted = () => {
+    if (isAuthenticated) {
+      navigate("/dashboard");
+    } else {
+      navigate("/login");
+    }
+  };
 
   // Light and dark gradients
   const lightGradient = [
@@ -65,13 +76,15 @@ export default function HeroSection() {
             and connect with the proper authorities. No more confusion—just clear steps forward.
           </p>
 
-          {/* CTA Button */}
+          {/* ✅ Updated CTA Button with conditional behavior */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.6 }}>
-            <Link to={createPageUrl("Explore")}>
-              <Button className="cta-button">
-                Get Started <ArrowRight className="w-5 h-5 ml-2 inline-block" />
-              </Button>
-            </Link>
+            <Button 
+              onClick={handleGetStarted}
+              className="cta-button"
+            >
+              {isAuthenticated ? 'Go to Dashboard' : 'Get Started'} 
+              <ArrowRight className="w-5 h-5 ml-2 inline-block" />
+            </Button>
           </motion.div>
         </motion.div>
       </div>

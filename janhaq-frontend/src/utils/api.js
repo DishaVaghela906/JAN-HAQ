@@ -121,30 +121,22 @@ export async function getUserProfile() {
 }
 
 // Update user profile (for onboarding or profile edits)
-export async function updateUserProfile(profile) {
+export async function updateUserProfile({ profile }) {
   console.log('API - Updating user profile:', profile);
-  
   const data = await apiRequest("/api/auth/profile", {
     method: "PUT",
     body: JSON.stringify({ profile }),
   });
-
   console.log('API - Profile update response:', {
     userId: data.user?._id,
     profileRole: data.user?.profile?.role,
     profileInterests: data.user?.profile?.interests
   });
-
-  // Validate response
   if (!data.user || !data.user._id) {
     throw new Error('Invalid user data received after profile update');
   }
-
-  // Update user in localStorage with new profile
   localStorage.setItem("user", JSON.stringify(data.user));
-
   console.log('API - Profile updated successfully in localStorage');
-
   return data.user;
 }
 

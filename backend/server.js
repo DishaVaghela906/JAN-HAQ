@@ -248,7 +248,15 @@ app.get("/api/auth/profile", verifyToken, async (req, res) => {
       _id: user._id.toString(),
       name: user.name,
       email: user.email,
-      profile: user.profile || { ageGroup: "", role: "", interests: [] },
+      profile: {
+        ageGroup: user.profile?.ageGroup || "",
+        role: user.profile?.role || "",
+        interests: user.profile?.interests || [],
+        casteCategory: user.profile?.casteCategory || "",
+        languagePreference: user.profile?.languagePreference || "",
+        address: user.profile?.address || "",
+        profilePic: user.profile?.profilePic || ""
+      },
       createdAt: user.createdAt
     });
   } catch (err) {
@@ -275,6 +283,10 @@ app.put("/api/auth/profile", verifyToken, async (req, res) => {
           'profile.ageGroup': profile.ageGroup || "",
           'profile.role': profile.role || "",
           'profile.interests': profile.interests || [],
+          'profile.casteCategory': profile.casteCategory || "",
+          'profile.languagePreference': profile.languagePreference || "",
+          'profile.address': profile.address || "",
+          'profile.profilePic': profile.profilePic || "",
           updatedAt: new Date() 
         } 
       }
@@ -296,7 +308,15 @@ app.put("/api/auth/profile", verifyToken, async (req, res) => {
         _id: updatedUser._id.toString(),
         name: updatedUser.name,
         email: updatedUser.email,
-        profile: updatedUser.profile,
+        profile: {
+          ageGroup: updatedUser.profile?.ageGroup || "",
+          role: updatedUser.profile?.role || "",
+          interests: updatedUser.profile?.interests || [],
+          casteCategory: updatedUser.profile?.casteCategory || "",
+          languagePreference: updatedUser.profile?.languagePreference || "",
+          address: updatedUser.profile?.address || "",
+          profilePic: updatedUser.profile?.profilePic || ""
+        },
         createdAt: updatedUser.createdAt
       },
       message: "Profile updated successfully"

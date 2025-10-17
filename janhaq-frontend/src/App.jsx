@@ -16,6 +16,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Departments from "./pages/Departments";
 import SavedLaws from "./pages/SavedLaws";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
               <Route path="problem-solver" element={<ProblemSolver />} />
               <Route path="departments" element={<Departments />} />
               <Route path="dashboard" element={<Dashboard />} />
-              <Route path="saved-laws" element={<SavedLaws />} />
+                <Route path="saved-laws" element={<SavedLaws />} />
+                <Route path="profile" element={<Profile />} />
             </Route>
           </Route>
 

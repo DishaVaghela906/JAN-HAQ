@@ -140,6 +140,17 @@ export async function updateUserProfile({ profile }) {
   return data.user;
 }
 
+// Change password
+export async function changePassword(currentPassword, newPassword) {
+  console.log('API - Changing password');
+  const data = await apiRequest("/api/auth/change-password", {
+    method: "PUT",
+    body: JSON.stringify({ currentPassword, newPassword }),
+  });
+  console.log('API - Password changed successfully');
+  return data;
+}
+
 // Check if user profile is complete (for onboarding check)
 export function isProfileComplete(user) {
   if (!user || !user.profile) {

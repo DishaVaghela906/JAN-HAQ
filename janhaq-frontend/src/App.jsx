@@ -16,6 +16,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Departments from "./pages/Departments";
 import SavedLaws from "./pages/SavedLaws";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -52,5 +53,4 @@ function App() {
   );
 }
 
-  import Profile from "./pages/Profile";
 export default App;

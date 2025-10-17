@@ -327,6 +327,52 @@ app.put("/api/auth/profile", verifyToken, async (req, res) => {
   }
 });
 
+// Change Password
+app.put("/api/auth/change-password", verifyToken, async (req, res) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+
+    if (!currentPassword || !newPassword) {
+      return res.status(400).json({ message: "Current password and new password are required" });
+    }
+
+    if (newPassword.length < 6) {
+      return res.status(400).json({ message: "New password must be at least 6 characters" });
+    }
+
+    const userId = new ObjectId(req.userId);
+
+    // Get user with password
+    const user = await usersCollection.findOne({ _id: userId });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Verify current password
+    const isMatch = await bcrypt.compare(currentPassword, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ message: "Current password is incorrect" });
+    }
+
+    // Hash new password
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // Update password
+    await usersCollection.updateOne(
+      { _id: userId },
+      { $set: { password: hashedPassword, updatedAt: new Date() } }
+    );
+
+    console.log(`✅ Password changed for user: ${user.email}`);
+
+    res.json({ message: "Password changed successfully" });
+  } catch (err) {
+    console.error("❌ Change Password Error:", err);
+    res.status(500).json({ message: "Failed to change password" });
+  }
+});
+
 // ========================================
 // RECOMMENDATIONS
 // ========================================

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { getUserProfile, updateUserProfile } from "../utils/api";
+import { getUserProfile, updateUserProfile, changePassword } from "../utils/api";
 import { useAuth } from "../context/AuthContext";
 import OnboardingForm from "../components/OnboardingForm";
 import { UserCircle } from "lucide-react";
@@ -19,8 +19,12 @@ export default function Profile() {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
+  const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [passwordSuccess, setPasswordSuccess] = useState("");
+  const [changingPassword, setChangingPassword] = useState(false);
   const casteCategories = ["General", "OBC", "SC", "ST", "Other"];
 
   // Load user profile on mount
@@ -98,6 +102,40 @@ export default function Profile() {
   const handlePersonalizationEdit = (profile) => {
     setPersonalization(profile);
     setShowOnboarding(false);
+  };
+
+  // Handle password change
+  const handlePasswordChange = async () => {
+    setPasswordError("");
+    setPasswordSuccess("");
+
+    if (!currentPassword || !newPassword || !confirmPassword) {
+      setPasswordError("All password fields are required");
+      return;
+    }
+
+    if (newPassword.length < 6) {
+      setPasswordError("New password must be at least 6 characters");
+      return;
+    }
+
+    if (newPassword !== confirmPassword) {
+      setPasswordError("New passwords do not match");
+      return;
+    }
+
+    setChangingPassword(true);
+    try {
+      await changePassword(currentPassword, newPassword);
+      setPasswordSuccess("Password changed successfully");
+      setCurrentPassword("");
+      setNewPassword("");
+      setConfirmPassword("");
+    } catch (err) {
+      setPasswordError(err.message || "Failed to change password");
+    } finally {
+      setChangingPassword(false);
+    }
   };
 
   if (loading) {
@@ -204,6 +242,52 @@ export default function Profile() {
               placeholder="Your address"
               className="w-full p-3 rounded-xl border border-gray-300 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm transition-all duration-200"
             />
+          </section>
+          {/* Change Password */}
+          <section>
+            <h2 className="text-lg font-semibold mb-4 text-blue-700 dark:text-blue-300">Change Password</h2>
+            <div className="space-y-4">
+              <div>
+                <label className="block mb-1 font-medium text-sm">Current Password</label>
+                <input
+                  type="password"
+                  value={currentPassword}
+                  onChange={e => setCurrentPassword(e.target.value)}
+                  placeholder="Enter current password"
+                  className="w-full p-3 rounded-xl border border-gray-300 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm transition-all duration-200"
+                />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium text-sm">New Password</label>
+                <input
+                  type="password"
+                  value={newPassword}
+                  onChange={e => setNewPassword(e.target.value)}
+                  placeholder="Enter new password (min 6 characters)"
+                  className="w-full p-3 rounded-xl border border-gray-300 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm transition-all duration-200"
+                />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium text-sm">Confirm New Password</label>
+                <input
+                  type="password"
+                  value={confirmPassword}
+                  onChange={e => setConfirmPassword(e.target.value)}
+                  placeholder="Confirm new password"
+                  className="w-full p-3 rounded-xl border border-gray-300 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm transition-all duration-200"
+                />
+              </div>
+              <button
+                type="button"
+                onClick={handlePasswordChange}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                disabled={changingPassword}
+              >
+                {changingPassword ? "Changing..." : "Change Password"}
+              </button>
+              {passwordSuccess && <span className="block text-green-600 dark:text-green-400 font-medium text-sm">{passwordSuccess}</span>}
+              {passwordError && <span className="block text-red-600 dark:text-red-400 font-medium text-sm">{passwordError}</span>}
+            </div>
           </section>
           {/* Save Button & Status */}
           <div className="flex flex-col items-center space-y-2 mt-8">

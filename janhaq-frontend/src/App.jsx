@@ -16,10 +16,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Departments from "./pages/Departments";
 import SavedLaws from "./pages/SavedLaws";
+import Profile from "./pages/Profile";
 import MyComplaints from './pages/MyComplaints';
 // NEW IMPORT: Import the new page component
 import ComplaintGenerator from './pages/ComplaintGenerator';
-
 function App() {
   return (
     <AuthProvider> {/* ✅ Wrap everything with AuthProvider */}
@@ -46,6 +46,7 @@ function App() {
               <Route path="my-complaints/:complaintId" element={<MyComplaints />} />
               {/* NEW ROUTE: Add the path for the Complaint Generator */}
               <Route path="complaint-generator" element={<ComplaintGenerator />} />
+              <Route path="profile" element={<Profile />} />
             </Route>
           </Route>
 

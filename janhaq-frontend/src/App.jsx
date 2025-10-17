@@ -15,6 +15,7 @@ import ProblemSolver from "./pages/ProblemSolver";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Departments from "./pages/Departments";
+import SavedLaws from "./pages/SavedLaws";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path="problem-solver" element={<ProblemSolver />} />
               <Route path="departments" element={<Departments />} />
               <Route path="dashboard" element={<Dashboard />} />
+              <Route path="saved-laws" element={<SavedLaws />} />
             </Route>
           </Route>
 

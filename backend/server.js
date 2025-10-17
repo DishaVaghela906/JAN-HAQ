@@ -541,6 +541,114 @@ app.get("/api/departments", async (req, res) => {
 });
 
 // ========================================
+// SAVED ITEMS
+// ========================================
+
+// Save an item (law or scheme)
+app.post("/api/saved-items", verifyToken, async (req, res) => {
+  try {
+    const { itemId, title, description, type, referenceLink, tags } = req.body;
+
+    if (!itemId || !title || !type) {
+      return res.status(400).json({ message: "itemId, title, and type are required" });
+    }
+
+    // Check if item is already saved
+    const existingItem = await usersCollection.findOne({
+      _id: new ObjectId(req.userId),
+      "savedItems.itemId": itemId
+    });
+
+    if (existingItem) {
+      return res.status(400).json({ message: "Item already saved" });
+    }
+
+    // Add to user's savedItems array
+    const savedItem = {
+      itemId,
+      title,
+      description: description || "",
+      type, // 'law' or 'scheme'
+      referenceLink: referenceLink || "",
+      tags: tags || [],
+      savedAt: new Date()
+    };
+
+    await usersCollection.updateOne(
+      { _id: new ObjectId(req.userId) },
+      { $push: { savedItems: savedItem } }
+    );
+
+    console.log(`✅ Item saved by ${req.userEmail}: ${title}`);
+
+    res.status(201).json({
+      message: "Item saved successfully",
+      savedItem
+    });
+  } catch (err) {
+    console.error("❌ Save Item Error:", err);
+    res.status(500).json({ message: "Failed to save item" });
+  }
+});
+
+// Get all saved items for user
+app.get("/api/saved-items", verifyToken, async (req, res) => {
+  try {
+    const user = await usersCollection.findOne(
+      { _id: new ObjectId(req.userId) },
+      { projection: { savedItems: 1 } }
+    );
+
+    const savedItems = user?.savedItems || [];
+
+    res.json(savedItems);
+  } catch (err) {
+    console.error("❌ Get Saved Items Error:", err);
+    res.status(500).json({ message: "Failed to fetch saved items" });
+  }
+});
+
+// Remove a saved item
+app.delete("/api/saved-items/:itemId", verifyToken, async (req, res) => {
+  try {
+    const { itemId } = req.params;
+
+    const result = await usersCollection.updateOne(
+      { _id: new ObjectId(req.userId) },
+      { $pull: { savedItems: { itemId: itemId } } }
+    );
+
+    if (result.modifiedCount === 0) {
+      return res.status(404).json({ message: "Item not found in saved items" });
+    }
+
+    console.log(`✅ Item unsaved by ${req.userEmail}: ${itemId}`);
+
+    res.json({ message: "Item removed successfully" });
+  } catch (err) {
+    console.error("❌ Unsave Item Error:", err);
+    res.status(500).json({ message: "Failed to remove item" });
+  }
+});
+
+// Check if specific item is saved (for button state)
+app.get("/api/saved-items/check/:itemId", verifyToken, async (req, res) => {
+  try {
+    const { itemId } = req.params;
+
+    const user = await usersCollection.findOne({
+      _id: new ObjectId(req.userId),
+      "savedItems.itemId": itemId
+    });
+
+    res.json({ isSaved: !!user });
+  } catch (err) {
+    console.error("❌ Check Saved Item Error:", err);
+    res.status(500).json({ message: "Failed to check item status" });
+  }
+});
+
+// ========================================
 // COMPLAINTS
 // ========================================
 

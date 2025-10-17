@@ -8,7 +8,6 @@ export default function Laws() {
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
 
-  // Fetch all laws on mount
   useEffect(() => {
     const fetchLaws = async () => {
       setLoading(true);
@@ -20,7 +19,6 @@ export default function Laws() {
     fetchLaws();
   }, []);
 
-  // Filter laws on search
   useEffect(() => {
     if (!searchTerm) {
       setFilteredLaws(allLaws);
@@ -35,45 +33,69 @@ export default function Laws() {
   }, [searchTerm, allLaws]);
 
   return (
-    <div className="flex-grow max-w-7xl mx-auto py-16 px-6">
-      <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold mb-4">Laws & Regulations</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-          Browse and filter through the legal knowledge base.
-        </p>
-      </div>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 bg-pattern">
 
-      {/* Search input */}
-      <div className="mb-8 max-w-lg mx-auto">
-        <input
-          type="text"
-          placeholder="Filter laws by title or keyword..."
-          className="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
-
-      {/* Law cards */}
-      {loading ? (
-        <p className="text-center">Loading laws...</p>
-      ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredLaws.length > 0 ? (
-            filteredLaws.map((law, index) => (
-              <Card
-                key={index}
-                title={law.title}
-                description={law.description}
-                icon="📜"
-                referenceLink={law.referenceLink}
-              />
-            ))
-          ) : (
-            <p className="text-center col-span-full">No laws match your filter.</p>
-          )}
+      {/* Remove top and bottom white space and add content padding */}
+      <div className="mt-[-100px] mb-[-80px] pt-24 pb-24">
+        <div className="text-center mb-6 px-4">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Laws & Regulations</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Browse and filter through the legal knowledge base.
+          </p>
         </div>
-      )}
+
+        {/* Search input */}
+        <div className="mb-6 max-w-lg mx-auto px-4">
+          <input
+            type="text"
+            placeholder="Filter laws by title or keyword..."
+            className="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+
+        {/* Law cards with extra horizontal padding */}
+        {loading ? (
+          <p className="text-center">Loading laws...</p>
+        ) : (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-12 lg:px-16">
+            {filteredLaws.length > 0 ? (
+              filteredLaws.map((law, index) => (
+                <Card
+                  key={index}
+                  id={law.id || `law-${index}`}
+                  title={law.title}
+                  description={law.description}
+                  icon="📜"
+                  referenceLink={law.referenceLink}
+                  tags={law.tags || []}
+                />
+              ))
+            ) : (
+              <p className="text-center col-span-full">No laws match your filter.</p>
+            )}
+          </div>
+        )}
+      </div>
+
+      <style>
+        {`
+          /* LIGHT MODE: Visible gray dotted texture */
+          .bg-pattern {
+            background-color: #f9fafb;
+            background-image: radial-gradient(rgba(0,0,0,0.15) 1px, transparent 1px);
+            background-size: 15px 15px;
+          }
+
+          /* DARK MODE: Soft white dotted texture */
+          .dark .bg-pattern {
+            background-color: #111827;
+            background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+            background-size: 20px 20px;
+          }
+        `}
+      </style>
     </div>
   );
 }

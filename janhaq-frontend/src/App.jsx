@@ -19,10 +19,7 @@ import SavedLaws from "./pages/SavedLaws";
 import MyComplaints from './pages/MyComplaints';
 // NEW IMPORT: Import the new page component
 import ComplaintGenerator from './pages/ComplaintGenerator';
-<<<<<<< HEAD
 import Profile from "./pages/Profile";
-=======
->>>>>>> 4e0a8603dd6a63942775cd91a07c0351d72cde09
 
 function App() {
   return (
@@ -42,21 +39,14 @@ function App() {
               <Route path="problem-solver" element={<ProblemSolver />} />
               <Route path="departments" element={<Departments />} />
               <Route path="dashboard" element={<Dashboard />} />
-<<<<<<< HEAD
-=======
               <Route path="saved-laws" element={<SavedLaws />} />
->>>>>>> 4e0a8603dd6a63942775cd91a07c0351d72cde09
               {/* COMPLAINTS: List View */}
               <Route path="my-complaints" element={<MyComplaints />} /> 
               {/* FIX: Dynamic Route for Complaint Details (to avoid 404 on /my-complaints/ID) */}
               <Route path="my-complaints/:complaintId" element={<MyComplaints />} />
               {/* NEW ROUTE: Add the path for the Complaint Generator */}
               <Route path="complaint-generator" element={<ComplaintGenerator />} />
-<<<<<<< HEAD
-                <Route path="saved-laws" element={<SavedLaws />} />
                 <Route path="profile" element={<Profile />} />
-=======
->>>>>>> 4e0a8603dd6a63942775cd91a07c0351d72cde09
             </Route>
           </Route>
 

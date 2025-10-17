@@ -139,10 +139,12 @@ export default function Schemes() {
             {filteredSchemes.map((scheme, index) => (
               <SchemeCard
                 key={index}
+                id={scheme.id || `scheme-${index}`}
                 title={scheme.scheme_name}
                 description={scheme.details}
                 icon="💡"
                 referenceLink={scheme.referenceLink}
+                tags={scheme.tags || [scheme.schemeCategory].filter(Boolean)}
               />
             ))}
           </div>

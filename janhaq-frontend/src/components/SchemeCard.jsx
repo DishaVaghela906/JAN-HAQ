@@ -1,8 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Bookmark } from "lucide-react";
+import { useAuth } from "../context/AuthContext";
+import { saveItem, unsaveItem, checkIfSaved } from "../utils/api";
+import LoginPromptModal from "./LoginPromptModal";
 
-export default function SchemeCard({ title = "No Title", description = "No description", icon, referenceLink }) {
+export default function SchemeCard({ id, title = "No Title", description = "No description", icon, referenceLink, tags = [] }) {
+  const { isAuthenticated } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const MAX_LENGTH = 120;
+
+  // Check if item is already saved
+  useEffect(() => {
+    if (isAuthenticated && id) {
+      checkSavedStatus();
+    }
+  }, [id, isAuthenticated]);
+
+  const checkSavedStatus = async () => {
+    try {
+      const saved = await checkIfSaved(id);
+      setIsSaved(saved);
+    } catch (err) {
+      console.error("Failed to check saved status:", err);
+    }
+  };
 
   const openModal = (e) => {
     e.stopPropagation();
@@ -18,6 +42,35 @@ export default function SchemeCard({ title = "No Title", description = "No descr
     if (referenceLink) window.open(referenceLink, "_blank");
   };
 
+  const handleSaveClick = async (e) => {
+    e.stopPropagation();
+    
+    // Show login prompt if not authenticated
+    if (!isAuthenticated) {
+      setShowLoginPrompt(true);
+      return;
+    }
+
+    setIsSaving(true);
+
+    try {
+      if (isSaved) {
+        // Unsave
+        await unsaveItem(id);
+        setIsSaved(false);
+      } else {
+        // Save
+        await saveItem(id, title, description, "scheme", referenceLink, tags);
+        setIsSaved(true);
+      }
+    } catch (err) {
+      console.error("Failed to toggle save:", err);
+      alert(err.message || "Failed to save item. Please try again.");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   return (
     <>
       {/* Card */}
@@ -25,7 +78,25 @@ export default function SchemeCard({ title = "No Title", description = "No descr
         className="relative rounded-2xl p-6 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer overflow-hidden flex flex-col justify-between h-full"
         onClick={openOfficialLink} // Clicking the card opens official link
       >
-        <div className="mb-4 flex items-center space-x-3">
+        {/* Save Button - Top Right */}
+        <button
+          onClick={handleSaveClick}
+          disabled={isSaving}
+          className={`absolute top-4 right-4 p-2 rounded-lg transition-all z-10 ${
+            isSaved
+              ? "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"
+              : "bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-purple-50 dark:hover:bg-purple-900/20"
+          } ${isSaving ? "opacity-50 cursor-not-allowed" : ""}`}
+          title={isSaved ? "Remove from saved items" : "Save this item"}
+        >
+          {isSaving ? (
+            <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
+          ) : (
+            <Bookmark className={`w-5 h-5 ${isSaved ? "fill-current" : ""}`} />
+          )}
+        </button>
+
+        <div className="mb-4 flex items-center space-x-3 pr-10">
           <span className="text-2xl">{icon}</span>
           <h2 className="text-lg font-bold dark:text-white">{title}</h2>
         </div>
@@ -68,6 +139,12 @@ export default function SchemeCard({ title = "No Title", description = "No descr
           </div>
         </div>
       )}
+
+      {/* Login Prompt Modal */}
+      <LoginPromptModal 
+        isOpen={showLoginPrompt} 
+        onClose={() => setShowLoginPrompt(false)} 
+      />
     </>
   );
 }

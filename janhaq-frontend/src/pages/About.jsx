@@ -13,7 +13,7 @@ export default function About() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 bg-pattern">
 
       {/* Tight top margin like Home.jsx */}
-      <div className="mt-[-100px]">
+      <div className="mt-[-80px]">
         <StorySection />
       </div>
 

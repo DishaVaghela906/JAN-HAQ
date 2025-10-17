@@ -64,10 +64,12 @@ export default function Laws() {
               filteredLaws.map((law, index) => (
                 <Card
                   key={index}
+                  id={law.id || `law-${index}`}
                   title={law.title}
                   description={law.description}
                   icon="📜"
                   referenceLink={law.referenceLink}
+                  tags={law.tags || []}
                 />
               ))
             ) : (

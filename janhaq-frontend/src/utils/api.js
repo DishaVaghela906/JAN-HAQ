@@ -278,6 +278,74 @@ export async function getDepartments() {
   return apiRequest("/api/departments");
 }
 
+// --- Saved Items API ---
+
+// Save an item (law or scheme)
+export async function saveItem(itemId, title, description, type, referenceLink = "", tags = []) {
+  console.log('API - Saving item:', { itemId, title, type });
+  
+  try {
+    const data = await apiRequest("/api/saved-items", {
+      method: "POST",
+      body: JSON.stringify({ itemId, title, description, type, referenceLink, tags }),
+    });
+    
+    console.log('API - Item saved successfully');
+    return data;
+  } catch (err) {
+    console.error("API - Failed to save item:", err);
+    throw err;
+  }
+}
+
+// Get all saved items
+export async function getSavedItems() {
+  console.log('API - Fetching saved items');
+  
+  try {
+    const data = await apiRequest("/api/saved-items", {
+      method: "GET",
+    });
+    
+    console.log('API - Saved items received:', data?.length || 0);
+    return data || [];
+  } catch (err) {
+    console.error("API - Failed to fetch saved items:", err);
+    return [];
+  }
+}
+
+// Remove a saved item
+export async function unsaveItem(itemId) {
+  console.log('API - Unsaving item:', itemId);
+  
+  try {
+    const data = await apiRequest(`/api/saved-items/${itemId}`, {
+      method: "DELETE",
+    });
+    
+    console.log('API - Item unsaved successfully');
+    return data;
+  } catch (err) {
+    console.error("API - Failed to unsave item:", err);
+    throw err;
+  }
+}
+
+// Check if item is saved
+export async function checkIfSaved(itemId) {
+  try {
+    const data = await apiRequest(`/api/saved-items/check/${itemId}`, {
+      method: "GET",
+    });
+    
+    return data.isSaved;
+  } catch (err) {
+    console.error("API - Failed to check saved status:", err);
+    return false;
+  }
+}
+
 // --- Logout ---
 export function logoutUser() {
   console.log('API - Logging out user');

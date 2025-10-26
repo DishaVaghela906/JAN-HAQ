@@ -248,7 +248,15 @@ app.get("/api/auth/profile", verifyToken, async (req, res) => {
       _id: user._id.toString(),
       name: user.name,
       email: user.email,
-      profile: user.profile || { ageGroup: "", role: "", interests: [] },
+      profile: {
+        ageGroup: user.profile?.ageGroup || "",
+        role: user.profile?.role || "",
+        interests: user.profile?.interests || [],
+        casteCategory: user.profile?.casteCategory || "",
+        languagePreference: user.profile?.languagePreference || "",
+        address: user.profile?.address || "",
+        profilePic: user.profile?.profilePic || ""
+      },
       createdAt: user.createdAt
     });
   } catch (err) {
@@ -275,6 +283,10 @@ app.put("/api/auth/profile", verifyToken, async (req, res) => {
           'profile.ageGroup': profile.ageGroup || "",
           'profile.role': profile.role || "",
           'profile.interests': profile.interests || [],
+          'profile.casteCategory': profile.casteCategory || "",
+          'profile.languagePreference': profile.languagePreference || "",
+          'profile.address': profile.address || "",
+          'profile.profilePic': profile.profilePic || "",
           updatedAt: new Date() 
         } 
       }
@@ -296,7 +308,15 @@ app.put("/api/auth/profile", verifyToken, async (req, res) => {
         _id: updatedUser._id.toString(),
         name: updatedUser.name,
         email: updatedUser.email,
-        profile: updatedUser.profile,
+        profile: {
+          ageGroup: updatedUser.profile?.ageGroup || "",
+          role: updatedUser.profile?.role || "",
+          interests: updatedUser.profile?.interests || [],
+          casteCategory: updatedUser.profile?.casteCategory || "",
+          languagePreference: updatedUser.profile?.languagePreference || "",
+          address: updatedUser.profile?.address || "",
+          profilePic: updatedUser.profile?.profilePic || ""
+        },
         createdAt: updatedUser.createdAt
       },
       message: "Profile updated successfully"
@@ -304,6 +324,52 @@ app.put("/api/auth/profile", verifyToken, async (req, res) => {
   } catch (err) {
     console.error("❌ Update Profile Error:", err);
     res.status(500).json({ message: "Failed to update profile" });
+  }
+});
+
+// Change Password
+app.put("/api/auth/change-password", verifyToken, async (req, res) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+
+    if (!currentPassword || !newPassword) {
+      return res.status(400).json({ message: "Current password and new password are required" });
+    }
+
+    if (newPassword.length < 6) {
+      return res.status(400).json({ message: "New password must be at least 6 characters" });
+    }
+
+    const userId = new ObjectId(req.userId);
+
+    // Get user with password
+    const user = await usersCollection.findOne({ _id: userId });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Verify current password
+    const isMatch = await bcrypt.compare(currentPassword, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ message: "Current password is incorrect" });
+    }
+
+    // Hash new password
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // Update password
+    await usersCollection.updateOne(
+      { _id: userId },
+      { $set: { password: hashedPassword, updatedAt: new Date() } }
+    );
+
+    console.log(`✅ Password changed for user: ${user.email}`);
+
+    res.json({ message: "Password changed successfully" });
+  } catch (err) {
+    console.error("❌ Change Password Error:", err);
+    res.status(500).json({ message: "Failed to change password" });
   }
 });
 
@@ -649,30 +715,108 @@ app.get("/api/saved-items/check/:itemId", verifyToken, async (req, res) => {
 });
 
 // ========================================
-// COMPLAINTS
+// COMPLAINT GENERATOR AI (NEW)
 // ========================================
 
+app.post("/api/rewriteComplaint", async (req, res) => {
+  const { department, description, name, area } = req.body;
+  
+  if (!department || !description || !name || !area) {
+    return res.status(400).json({ error: "Department, complaint description, name, and area are required" });
+  }
+  
+  // Construct a subject line based on the description
+  const briefSubject = description.length > 50 ? description.substring(0, 50) + "..." : description;
+
+  const prompt = `
+You are a formal complaint writer for a citizen service application in India.
+Your task is to take a citizen's informal complaint details and transform it into a professional, polite, and official email body text suitable for submission to a government department.
+The original description is: "${description}". The department is: "${department}". The citizen's area is: "${area}".
+Generate ONLY the formal body text that clearly states the problem and requests action, in a respectful tone. DO NOT include the To, Subject, Dear Sir/Madam, or Sincerely sections in your final output. The output must be plain text.
+`;
+
+  try {
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: "gpt-oss-120b",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 800,
+        temperature: 0.7,
+      }),
+    });
+
+    if (!response.ok) {
+      const text = await response.text();
+      throw new Error(`OpenRouter API error: ${response.status} ${text}`);
+    }
+
+    const data = await response.json();
+    const formalBodyText = data?.choices?.[0]?.message?.content || "Could not generate formal complaint. Please try again.";
+    
+    // Fallback to a formal subject line
+    const formalSubject = `FORMAL COMPLAINT REGARDING ${briefSubject.toUpperCase()}`;
+    
+    // Simple cleaning of the output in case the model ignored the instructions
+    const cleanFormalBodyText = formalBodyText
+      .replace(/To:.*/i, '')
+      .replace(/Subject:.*/i, '')
+      .replace(/Dear Sir\/Madam,?/i, '')
+      .replace(/Sincerely,?.*/is, '')
+      .trim();
+
+
+    res.json({ formalText: cleanFormalBodyText, formalSubject });
+  } catch (err) {
+    console.error("❌ Error in /api/rewriteComplaint:", err);
+    res.status(500).json({ error: "Failed to generate formal complaint" });
+  }
+});
+
+
+// ========================================
+// COMPLAINTS (UPDATED)
+// ========================================
+
+// Submit a new formal complaint
 app.post("/api/complaints", verifyToken, async (req, res) => {
   try {
-    const { department, description, location } = req.body;
+    const { department, fullName, email, phone, area, originalText, formalText } = req.body;
 
-    if (!department || !description) {
-      return res.status(400).json({ message: "Department and description are required" });
+    if (!department || !originalText || !formalText || !fullName || !email) {
+      return res.status(400).json({ message: "All required complaint fields (department, originalText, formalText, fullName, email) must be provided" });
     }
+    
+    // Extract subject line from formalText (assuming it's the second line after To:)
+    const lines = formalText.split('\n');
+    const subjectLine = lines.find(line => line.toLowerCase().startsWith('subject:'));
+    const subject = subjectLine ? subjectLine.replace(/Subject:/i, '').trim() : `Complaint for ${department}`;
+    
+    // Find the department to save its details (optional, but good practice)
+    const deptDetails = await departmentsCollection.findOne({ name: department });
 
     const complaint = {
       userId: req.userId,
-      userEmail: req.userEmail,
-      department,
-      description,
-      location: location || "",
-      status: "pending",
+      name: fullName,
+      email,
+      phone: phone || "",
+      area: area || "",
+      department: department,
+      departmentDetails: deptDetails, 
+      originalText,
+      formalText,
+      status: "Submitted",
+      subject,
       createdAt: new Date(),
     };
 
     const result = await complaintsCollection.insertOne(complaint);
 
-    console.log(`✅ Complaint submitted by ${req.userEmail}`);
+    console.log(`✅ Formal complaint submitted by ${email}`);
 
     res.status(201).json({
       message: "Complaint submitted successfully",
@@ -687,10 +831,12 @@ app.post("/api/complaints", verifyToken, async (req, res) => {
   }
 });
 
+// Get user complaints (List view)
 app.get("/api/complaints", verifyToken, async (req, res) => {
   try {
     const complaints = await complaintsCollection
       .find({ userId: req.userId })
+      .project({ originalText: 0, formalText: 0, departmentDetails: 0 }) 
       .sort({ createdAt: -1 })
       .toArray();
 
@@ -700,6 +846,28 @@ app.get("/api/complaints", verifyToken, async (req, res) => {
     res.status(500).json({ message: "Failed to fetch complaints" });
   }
 });
+
+// Get single complaint details (Detail view)
+app.get("/api/complaints/:id", verifyToken, async (req, res) => {
+    try {
+        const complaintId = new ObjectId(req.params.id);
+        
+        const complaint = await complaintsCollection.findOne({ 
+            _id: complaintId, 
+            userId: req.userId 
+        });
+
+        if (!complaint) {
+            return res.status(404).json({ message: "Complaint not found" });
+        }
+
+        res.json(complaint);
+    } catch (err) {
+        console.error("❌ Get Single Complaint Error:", err);
+        res.status(500).json({ message: "Failed to fetch complaint details" });
+    }
+});
+
 
 // ========================================
 // HEALTH CHECK

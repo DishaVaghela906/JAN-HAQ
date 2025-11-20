@@ -18,14 +18,14 @@ const team = [
   },
   { 
     name: "Dhriti Gandhi", 
-    role: "Backend Developer", 
+    role: "Developer", 
     img: dhritiImg,
     github: "https://github.com/Dhriti-5",
     linkedin: "http://www.linkedin.com/in/dhriti-gandhi-0758372b5"
   },
   { 
     name: "Disha Vaghela", 
-    role: "Frontend Developer", 
+    role: "Developer", 
     img: dishaImg,
     github: "https://github.com/DishaVaghela906",
     linkedin: "https://www.linkedin.com/in/disha-vaghela-084013323"

@@ -10,11 +10,11 @@ import krishaImg from "../../pages/krisha.jpg";
 // --- Team Data ---
 const team = [
   { 
-    name: "Disha Vaghela", 
-    role: "Frontend Developer", 
-    img: dishaImg,
-    github: "https://github.com/DishaVaghela906",
-    linkedin: "https://www.linkedin.com/in/disha-vaghela-084013323"
+    name: "Krisha Gandhi", 
+    role: "Developer", 
+    img: krishaImg,
+    github: "https://github.com/krishagandhi0711",
+    linkedin: "https://www.linkedin.com/in/krisha-gandhi-2a35972aa"
   },
   { 
     name: "Dhriti Gandhi", 
@@ -24,11 +24,11 @@ const team = [
     linkedin: "http://www.linkedin.com/in/dhriti-gandhi-0758372b5"
   },
   { 
-    name: "Krisha Gandhi", 
-    role: "Designer", 
-    img: krishaImg,
-    github: "https://github.com/krishagandhi0711",
-    linkedin: "https://www.linkedin.com/in/krisha-gandhi-2a35972aa"
+    name: "Disha Vaghela", 
+    role: "Frontend Developer", 
+    img: dishaImg,
+    github: "https://github.com/DishaVaghela906",
+    linkedin: "https://www.linkedin.com/in/disha-vaghela-084013323"
   },
 ];
 

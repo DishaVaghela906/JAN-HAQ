@@ -135,9 +135,9 @@ export default function Login() {
           <Link to="/register" className="hover:underline hover:text-blue-600 dark:hover:text-blue-400">
             Register Now
           </Link>
-          <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-400">
+          <Link to="/forgot-password" className="hover:underline hover:text-blue-600 dark:hover:text-blue-400">
             Forgot Password?
-          </a>
+          </Link>
         </div>
 
         <div className="mt-4 text-center text-xs text-gray-500 dark:text-gray-500">

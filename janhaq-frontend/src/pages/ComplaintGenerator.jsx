@@ -17,7 +17,7 @@ const ComplaintGenerator = () => {
         email: user?.email || '',
         phone: '',
         area: '',
-        city: '', 
+        city: '', // City will now be selected, not pre-filled
         department: '',
         originalText: '',
     });
@@ -28,41 +28,24 @@ const ComplaintGenerator = () => {
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(false);
 
-    // --- FIX 1: Check for authentication on load ---
-    useEffect(() => {
-        if (!user) {
-            setError("Authentication required. Please log in to file a complaint.");
-            
-            const timer = setTimeout(() => {
-                navigate('/login', { state: { from: '/complaint-generator' } });
-            }, 2000); 
-
-            return () => clearTimeout(timer);
-        }
-    }, [user, navigate]);
-    // --- END OF FIX 1 ---
-
-
     // Fetch all departments and extract unique cities on load
     useEffect(() => {
-        // Only fetch if the user is authenticated
-        if (user) {
-            const fetchDeptsAndCities = async () => {
-                try {
-                    const depts = await getDepartments(); // Raw list from API
-                    setAllDepartments(depts);
-                    
-                    const citySet = new Set(depts.map(dept => dept.city).filter(Boolean));
-                    setUniqueCities(Array.from(citySet));
+        const fetchDeptsAndCities = async () => {
+            try {
+                const depts = await getDepartments(); // Raw list from API
+                setAllDepartments(depts);
+                
+                // --- Extract unique, non-empty cities from all departments ---
+                const citySet = new Set(depts.map(dept => dept.city).filter(Boolean));
+                setUniqueCities(Array.from(citySet));
 
-                } catch (err) {
-                    console.error("Error fetching data:", err);
-                    setError('Failed to load departments and cities. Please try refreshing.');
-                }
-            };
-            fetchDeptsAndCities();
-        }
-    }, [user]); // Add user as a dependency
+            } catch (err) {
+                console.error("Error fetching data:", err);
+                setError('Failed to load departments and cities. Please try refreshing.');
+            }
+        };
+        fetchDeptsAndCities();
+    }, []);
     
     // Fill user data when user object is available
     useEffect(() => {
@@ -78,25 +61,38 @@ const ComplaintGenerator = () => {
     // Get available, unique departments based on selected city
     const availableDepartments = useMemo(() => {
         if (!formData.city) {
-            return []; 
+            return []; // No city selected, so no departments to show
         }
         
+        // Filter departments by the selected city
         const citySpecificDepts = allDepartments.filter(dept => dept.city === formData.city);
 
+        // Filter for unique department names *within that city*
         const uniqueDeptsMap = new Map();
         citySpecificDepts.forEach(dept => {
             if (dept && dept.name && !uniqueDeptsMap.has(dept.name)) {
-                uniqueDeptsMap.set(dept.name, dept);
+                // To maintain full department object structure, we store the first unique one found
+                uniqueDeptsMap.set(dept.name, dept); 
             }
         });
         return Array.from(uniqueDeptsMap.values());
 
     }, [formData.city, allDepartments]);
 
+    // Memoized retrieval of the currently selected department object (for officer details)
+    const selectedDepartment = useMemo(() => {
+        if (!formData.department || !formData.city) return null;
+        // Find the full department object matching both name and city
+        return allDepartments.find(
+            d => d.name === formData.department && d.city === formData.city
+        );
+    }, [allDepartments, formData.department, formData.city]);
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         
+        // If city changes, reset the department
         if (name === 'city') {
             setFormData(prev => ({
                 ...prev,
@@ -107,6 +103,7 @@ const ComplaintGenerator = () => {
             setFormData(prev => ({ ...prev, [name]: value }));
         }
 
+        // Clear formal complaint if original text or department changes
         if ((name === 'originalText' || name === 'department' || name === 'city') && formalComplaint) {
             setFormalComplaint(null);
             setError(null);
@@ -129,7 +126,7 @@ const ComplaintGenerator = () => {
                 description: formData.originalText,
                 name: formData.fullName,
                 area: formData.area,
-                city: formData.city, 
+                city: formData.city, // Pass city to rewrite
             };
             const result = await rewriteComplaint(data);
             setFormalComplaint(result);
@@ -146,10 +143,6 @@ const ComplaintGenerator = () => {
             return setError('Please generate the formal complaint first.');
         }
         
-        const selectedDepartment = allDepartments.find(
-            d => d.name === formData.department && d.city === formData.city
-        );
-
         if (!selectedDepartment) {
             return setError('Could not find department details. Please re-select the city and department.');
         }
@@ -158,6 +151,7 @@ const ComplaintGenerator = () => {
         setError(null);
         setSuccess(false);
 
+        // Generate the full email text, including the recipient officer details
         const fullEmailText = generateFullEmailText(formalComplaint.formalText, formalComplaint.formalSubject);
 
         const complaintData = {
@@ -166,11 +160,11 @@ const ComplaintGenerator = () => {
             phone: formData.phone,
             area: formData.area,
             city: formData.city, 
-            departmentId: selectedDepartment._id, 
-            departmentName: selectedDepartment.name,
-            // --- FIX 2: Add the 'department' field the backend is asking for ---
+            departmentId: selectedDepartment._id, // Use the already found _id
+            departmentName: selectedDepartment.name, // Keep name for reference
+            // --- FIX APPLIED HERE: Added the 'department' field the backend requires ---
             department: selectedDepartment.name, 
-            // --- END OF FIX 2 ---
+            // -------------------------------------------------------------------------
             originalText: formData.originalText,
             formalText: fullEmailText,
         };
@@ -206,8 +200,22 @@ const ComplaintGenerator = () => {
             day: 'numeric'
         });
 
+        // --- Logic to include officer details in the "To:" section ---
+        // Fallback to generic names if the details are missing
+        const officerName = selectedDepartment?.contact_person || 'The Concerned Officer';
+        const officerDesignation = selectedDepartment?.officerDesignation || 'Department Head';
+        const officerEmail = selectedDepartment?.email || '';
+        // Construct the To line using the fetched officer details
+        const toLine = `Recipient Details: 
+        Name: ${officerName} 
+        Designation: ${officerDesignation}
+        Email: ${officerEmail}
+        Department: ${formData.department}
+        City: ${formData.city}
+`;
+
         // Structure the final email text for saving to DB and preview
-        return `To: The ${formData.department} Department, ${formData.city}
+        return `${toLine}
 Subject: ${subject}
 
 Dear Sir/Madam,
@@ -226,28 +234,6 @@ Date: ${today}`;
     const previewText = formalComplaint 
         ? generateFullEmailText(formalComplaint.formalText, formalComplaint.formalSubject)
         : null;
-
-    // --- FIX 1 (Continued): Add a loading/redirecting state ---
-    if (!user) {
-        return (
-            <div className="bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-300">
-                <div className="max-w-7xl mx-auto py-12 px-6 text-center">
-                    <Loader className="w-10 h-10 mx-auto animate-spin mb-4 text-blue-600" />
-                    <h1 className="text-2xl font-bold">Authentication Required</h1>
-                    {error && (
-                         <div className="mt-4 p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-800 dark:text-red-200 flex items-center gap-3 max-w-md mx-auto">
-                            <AlertTriangle className="w-5 h-5 flex-shrink-0" />
-                            <p className="font-medium">Error: {error}</p>
-                        </div>
-                    )}
-                    <p className="text-lg mt-4 text-gray-600 dark:text-gray-400">
-                        Redirecting to login page...
-                    </p>
-                </div>
-            </div>
-        );
-    }
-    // --- END OF FIX 1 ---
 
     return (
         <div className="bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-300">
@@ -306,7 +292,6 @@ Date: ${today}`;
                                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-blue-500 focus:border-blue-500"
                                         disabled={!!user?.name}
                                     />
-                                routes/authRoutes.js
                                 </div>
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
@@ -337,6 +322,7 @@ Date: ${today}`;
                                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-blue-500 focus:border-blue-500"
                                     />
                                 </div>
+                                {/* City Select */}
                                 <div>
                                     <label htmlFor="city" className="block text-sm font-medium mb-1">City</label>
                                     <select
@@ -375,6 +361,7 @@ Date: ${today}`;
                                 />
                             </div>
 
+                            {/* Department Select (Filtered by City) */}
                             <div>
                                 <label htmlFor="department" className="block text-sm font-medium mb-1">Select Department</label>
                                 <select
@@ -390,10 +377,30 @@ Date: ${today}`;
                                         {!formData.city ? "Select a city first" : "Select a department"}
                                     </option>
                                     {availableDepartments.map(dept => (
-                                        <option key={dept._id} value={dept.name}>{dept.name}</option>
+                                        // Assuming dept.name is unique per city for this display
+                                        <option key={dept.name} value={dept.name}>{dept.name}</option>
                                     ))}
                                 </select>
                             </div>
+
+                            {/* --- OFFICER DETAILS DISPLAY (FETCHED FROM DATABASE) --- */}
+                            {selectedDepartment && (
+                                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                                    <h3 className="text-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Recipient Officer Details:</h3>
+                                    <p className="text-sm">
+                                        <strong>Name:</strong> {selectedDepartment.contact_perpon || 'The Concerned Officer'}
+                                    </p>
+                                    <p className="text-sm">
+                                        <strong>Role:</strong> {selectedDepartment.officerDesignation || `Head of ${selectedDepartment.name} Department`}
+                                    </p>
+                                    {selectedDepartment.email && (
+                                        <p className="text-sm">
+                                            <strong>Email:</strong> {selectedDepartment.email}
+                                        </p>
+                                    )}
+                                </div>
+                            )}
+                            {/* --- END OFFICER DETAILS DISPLAY --- */}
 
                             {/* Complaint Description */}
                             <div>
@@ -438,6 +445,8 @@ Date: ${today}`;
 
                         {formalComplaint ? (
                             <>
+                                {/* The redundant officer display box has been removed. */}
+                                
                                 <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg border border-gray-200 dark:border-gray-600 overflow-x-auto">
                                     <pre className="text-sm font-mono whitespace-pre-wrap text-gray-800 dark:text-gray-200">
                                         {previewText}

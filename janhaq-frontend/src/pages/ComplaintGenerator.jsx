@@ -162,6 +162,9 @@ const ComplaintGenerator = () => {
             city: formData.city, 
             departmentId: selectedDepartment._id, // Use the already found _id
             departmentName: selectedDepartment.name, // Keep name for reference
+            // --- FIX APPLIED HERE: Added the 'department' field the backend requires ---
+            department: selectedDepartment.name, 
+            // -------------------------------------------------------------------------
             originalText: formData.originalText,
             formalText: fullEmailText,
         };
@@ -197,7 +200,7 @@ const ComplaintGenerator = () => {
             day: 'numeric'
         });
 
-        // --- Logic to include officer details in the "To:" section (FULFILLS USER REQUEST) ---
+        // --- Logic to include officer details in the "To:" section ---
         // Fallback to generic names if the details are missing
         const officerName = selectedDepartment?.contact_person || 'The Concerned Officer';
         const officerDesignation = selectedDepartment?.officerDesignation || 'Department Head';
@@ -385,7 +388,7 @@ Date: ${today}`;
                                 <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
                                     <h3 className="text-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Recipient Officer Details:</h3>
                                     <p className="text-sm">
-                                        <strong>Name:</strong> {selectedDepartment.contact_person || 'The Concerned Officer'}
+                                        <strong>Name:</strong> {selectedDepartment.contact_perpon || 'The Concerned Officer'}
                                     </p>
                                     <p className="text-sm">
                                         <strong>Role:</strong> {selectedDepartment.officerDesignation || `Head of ${selectedDepartment.name} Department`}
@@ -442,7 +445,8 @@ Date: ${today}`;
 
                         {formalComplaint ? (
                             <>
-                                {/* The recipient details are displayed here within the text of the complaint, starting with the "To:" line, fulfilling the user's request. */}
+                                {/* The redundant officer display box has been removed. */}
+                                
                                 <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg border border-gray-200 dark:border-gray-600 overflow-x-auto">
                                     <pre className="text-sm font-mono whitespace-pre-wrap text-gray-800 dark:text-gray-200">
                                         {previewText}

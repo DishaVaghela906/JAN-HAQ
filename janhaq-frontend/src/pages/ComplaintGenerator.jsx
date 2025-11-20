@@ -388,7 +388,7 @@ Date: ${today}`;
                                 <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
                                     <h3 className="text-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Recipient Officer Details:</h3>
                                     <p className="text-sm">
-                                        <strong>Name:</strong> {selectedDepartment.contact_perpon || 'The Concerned Officer'}
+                                        <strong>Name:</strong> {selectedDepartment.contact_person || 'The Concerned Officer'}
                                     </p>
                                     <p className="text-sm">
                                         <strong>Role:</strong> {selectedDepartment.officerDesignation || `Head of ${selectedDepartment.name} Department`}

@@ -60,19 +60,6 @@ export default function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <Link to={createPageUrl("Explore")}>
-              <Button
-                size="lg"
-                className={`group relative bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-2xl rounded-2xl px-12 py-7 text-xl font-semibold text-gray-900 dark:text-white overflow-hidden transition-all duration-300`}
-              >
-                {/* Gradient overlay */}
-                <span className={`absolute inset-0 bg-gradient-to-br ${accentGradient} opacity-0 group-hover:opacity-20 blur-2xl transition-opacity duration-300 rounded-2xl`} />
-                <span className="relative flex items-center gap-3">
-                  Join JanHaq Now
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
-                </span>
-              </Button>
-            </Link>
           </motion.div>
 
           <motion.p

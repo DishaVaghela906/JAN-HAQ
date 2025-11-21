@@ -8,6 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ForgotPassword from "./pages/ForgotPassword";
 import Dashboard from "./pages/Dashboard";
 import Laws from "./pages/Laws";
 import Schemes from "./pages/Schemes";
@@ -53,6 +54,7 @@ function App() {
           {/* Auth pages (no layout) */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
 
           {/* Catch-all 404 */}
           <Route path="*" element={<div className="p-10 text-center">Page not found</div>} />

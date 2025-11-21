@@ -38,7 +38,10 @@ app.use((req, res, next) => {
 // ========================================
 
 const MONGO_URI = process.env.MONGO_URI;
-const client = new MongoClient(MONGO_URI);
+const client = new MongoClient(MONGO_URI, {
+  serverSelectionTimeoutMS: 5000,
+  socketTimeoutMS: 45000,
+});
 let db, departmentsCollection, usersCollection, complaintsCollection;
 
 async function connectDB() {
@@ -370,6 +373,67 @@ app.put("/api/auth/change-password", verifyToken, async (req, res) => {
   } catch (err) {
     console.error("❌ Change Password Error:", err);
     res.status(500).json({ message: "Failed to change password" });
+  }
+});
+
+// Verify Email for Password Reset
+app.post("/api/auth/verify-email", async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    if (!email) {
+      return res.status(400).json({ message: "Email is required" });
+    }
+
+    const user = await usersCollection.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ message: "No account found with this email address" });
+    }
+
+    console.log(`✅ Email verified for password reset: ${email}`);
+
+    res.json({ message: "Email verified successfully" });
+  } catch (err) {
+    console.error("❌ Verify Email Error:", err);
+    res.status(500).json({ message: "Failed to verify email" });
+  }
+});
+
+// Reset Password (Forgot Password)
+app.post("/api/auth/reset-password", async (req, res) => {
+  try {
+    const { email, newPassword } = req.body;
+
+    if (!email || !newPassword) {
+      return res.status(400).json({ message: "Email and new password are required" });
+    }
+
+    if (newPassword.length < 6) {
+      return res.status(400).json({ message: "Password must be at least 6 characters" });
+    }
+
+    const user = await usersCollection.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Hash new password
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // Update password
+    await usersCollection.updateOne(
+      { email },
+      { $set: { password: hashedPassword, updatedAt: new Date() } }
+    );
+
+    console.log(`✅ Password reset successfully for: ${email}`);
+
+    res.json({ message: "Password reset successfully" });
+  } catch (err) {
+    console.error("❌ Reset Password Error:", err);
+    res.status(500).json({ message: "Failed to reset password" });
   }
 });
 
